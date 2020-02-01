@@ -3,6 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  } );
+  </script>
 </head>
 <body>
 	<header>
@@ -48,6 +65,17 @@
 			<h2>Перфораторы</h2>
 			<section>
 				<div class="lists">
+					<p>
+  						<label for="amount">Цена:</label>
+
+  						<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+  						<input type="range" id="slider-range" min="0" max="30000" value="0">
+
+					</p>
+ 
+					<div id="slider-range">
+					</div>
+
 					<h3>Производители:</h3>
 					<ul>
 						<li>Bosch</li>
