@@ -3,23 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог</title>
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  	<link rel="stylesheet" href="/resources/demos/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script>
-  $( function() {
+  	$( function() {
     $( "#slider-range" ).slider({
       range: true,
       min: 0,
-      max: 500,
-      values: [ 75, 300 ],
+      max: 30000,
+      values: [ 0, 30000 ],
       slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        $( "#amount" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
       }
     });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+    $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - " + $( "#slider-range" ).slider( "values", 1 ) );
   } );
   </script>
 </head>
@@ -59,7 +58,7 @@
 		<main>
 			<h1>Каталог перфораторов</h1>
 			<ul>
-				<li><a href="index.html"><img src="home.png" alt="Home"></a></li>
+				<li><a href="index.html"><img src="img/icon-home.png" alt="Home"></a></li>
 				<li><a href="">Каталог</a></li>
 				<li><a href="">Инструмент</a></li>
 				<li>Перфораторы</li>
@@ -71,7 +70,6 @@
   						<label for="amount">Цена:</label>
 
   						<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
-  						<input type="range" id="amount" min="0" max="30000" value="0">
 
 					</p>
  
@@ -94,10 +92,20 @@
 					</ul>	
 					<button type="button">Показать</button>
 				</div>
+				<div class="sorting">
+					<h4>Сортировка:</h4>
+					<ul>
+						<li><button type="button">По цене</button></li>
+						<li><button type="button">По типу</button></li>
+						<li><button type="button">По фунцкионалу</button></li>
+						<li><button type="button"><img src="img/icon-up.svg" alt=""></button></li>
+						<li><button type="button"><img src="img/icon-down.svg" alt=""></button></li>
+					</ul>
+				</div>
 				<div class="mainlist">
 					<ul>
 						<li>
-							<img src="BFG3000.png" width="" height="" alt="Bosch3000">
+							<img src="img/Perforator_1.jpg" width="" height="" alt="Bosch3000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -108,7 +116,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="BFG6000.png" width="" height="" alt="Bosch6000">
+							<img src="img/Perforator_2.jpg" width="" height="" alt="Bosch6000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -119,7 +127,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="BFG2000.png" width="" height="" alt="Bosch2000">
+							<img src="img/Perforator_3.jpg" width="" height="" alt="Bosch2000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -129,7 +137,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="BFG3000.png" width="" height="" alt="Bosch3000">
+							<img src="img/Perforator_1.jpg" width="" height="" alt="Bosch3000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -140,7 +148,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="BFG6000.png" width="" height="" alt="Bosch6000">
+							<img src="img/Perforator_2.jpg" width="" height="" alt="Bosch6000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -151,7 +159,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="BFG2000.png" width="" height="" alt="Bosch2000">
+							<img src="img/Perforator_3.jpg" width="" height="" alt="Bosch2000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -161,7 +169,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="BFG3000.png" width="" height="" alt="Bosch3000">
+							<img src="img/Perforator_1.jpg" width="" height="" alt="Bosch3000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -172,7 +180,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="BFG6000.png" width="" height="" alt="Bosch6000">
+							<img src="img/Perforator_2.jpg" width="" height="" alt="Bosch6000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -183,7 +191,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="BFG2000.png" width="" height="" alt="Bosch2000">
+							<img src="img/Perforator_3.jpg" width="" height="" alt="Bosch2000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -194,6 +202,12 @@
 						</li>
 					</ul>
 				</div>
+				<ul>
+					<li><a href="">1</a></li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">Следующая</a></li>
+				</ul>
 			</section>
 			<article>
 				<h2>Пара слов о перфораторах</h2>
