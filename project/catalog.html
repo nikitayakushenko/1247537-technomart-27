@@ -66,6 +66,7 @@
 			<h2>Перфораторы</h2>
 			<section>
 				<div class="lists">
+					<form class="form-li" action="http://technomart.com" method="post">
 					<p>
   						<label for="amount">Цена:</label>
 
@@ -78,20 +79,21 @@
 
 					<h3>Производители:</h3>
 					<ul>
-						<li>Bosch</li>
-						<li>Интерскол</li>
-						<li>Makita</li>
-						<li>Dewalt</li>
-						<li>Hitachi</li>
+						<li><input type="checkbox">Bosch</li>
+						<li><input type="checkbox">Интерскол</li>
+						<li><input type="checkbox">Makita</li>
+						<li><input type="checkbox">Dewalt</li>
+						<li><input type="checkbox">Hitachi</li>
 					</ul>
 					<hr>
 					<h3>Питание:</h3>
 					<ul>
-						<li>Аккумуляторные</li>
-						<li>Сетевые</li>
+						<li><input type="radio" name="power" value="akk">Аккумуляторные</li>
+						<li><input type="radio" name="power" value="net">Сетевые</li>
 					</ul>	
 					<button type="button">Показать</button>
 				</div>
+				</form>
 				<div class="sorting">
 					<h4>Сортировка:</h4>
 					<ul>
