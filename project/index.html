@@ -193,6 +193,66 @@
 					<a href="">Заблудились? Напишите нам</a>
 				</div>
 			</section>
+			<section>
+				<h2>Вход</h2>
+				<p>Введите свой логин и пароль</p>
+				<form action="http://technomart.com" method="post">
+					<p>
+						<label for="login">Логин</label>
+						<input type="text" name="login" placeholder="Логин">
+					</p>
+					<p>
+						<label for="password">Пароль</label>
+						<input type="password" name="password" placeholder="************">
+					</p>
+					<p>
+        				<label for="checkbox">
+							<input type="checkbox" name="memory">
+							Запомнить меня
+						</label>
+						<a href="">Забыли пароль?</a>
+					</p>
+					<button type="submit">
+						Войти
+					</button>
+					<button type="submit">
+						Закрыть
+					</button>
+				</form>
+			</section>
+			<section>
+				<h2>Регистрация</h2>
+				<form action="http://technomart.com">
+					<p>
+						<label for="name">Имя</label>
+						<input type="text" name="name" required>
+					</p>
+					<p>
+						<label for="last-name">Фамилия</label>
+						<input type="text" name="last-name"required>
+					</p>
+					<p>
+						<label for="birthday">Дата рождения</label>
+						<input type="date" name="birthday">
+					</p>
+					<label for="sex">Пол</label>
+					<input type="radio" name="male" value="m">Мужской
+					<input type="radio" name="female" value="f">Женский
+					<p>
+						<label for="mail">Введите ваш почтовый ящик</label>
+						<input type="email" name="mail" required>
+					</p>
+					<p>
+						<label for="password">Придумайте пароль</label>
+						<input type="password" name="password" required>
+					</p>
+					<p>
+						<label for="phone">Телефон</label>
+						<input type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+					</p>
+				</form>
+				<button type="submit">Зарегестрироваться</button>
+			</section>
 		</main>
 	<footer>
 		<section>
