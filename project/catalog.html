@@ -77,21 +77,45 @@
 					<div id="slider-range">
 					</div>
 
-					<h3>Производители:</h3>
-					<ul>
-						<li><input type="checkbox">Bosch</li>
-						<li><input type="checkbox">Интерскол</li>
-						<li><input type="checkbox">Makita</li>
-						<li><input type="checkbox">Dewalt</li>
-						<li><input type="checkbox">Hitachi</li>
-					</ul>
-					<hr>
-					<h3>Питание:</h3>
-					<ul>
-						<li><input type="radio" name="power" value="akk">Аккумуляторные</li>
-						<li><input type="radio" name="power" value="net">Сетевые</li>
-					</ul>	
-					<button type="button">Показать</button>
+					<fieldset>
+						<legend>Производители:</legend>
+						<ul>
+							<li>
+								<input id="li-bo" type="checkbox" name="firma1">
+								<label for="li-bo">Bosch</label>
+							</li>
+							<li>
+								<input id="li-in" type="checkbox" name="firma2">
+								<label for="li-in">Интерскол</label>
+							</li>
+							<li>
+								<input id="li-ma" type="checkbox" name="firma3">
+								<label for="li-ma">Makita</label>
+							</li>
+							<li>
+								<input id="li-de" type="checkbox" name="firma4">
+								<label for="li-de">Dewalt</label>
+							</li>
+							<li>
+								<input id="li-hi" type="checkbox" name="firma5">
+								<label for="li-hi">Hitachi</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Питание:</legend>
+						<ul>
+							<li>
+								<input id="radio-akk" type="radio" name="power" value="akk">
+								<label for="radio-akk">Аккумуляторные</label>
+							</li>
+							<li>
+								<input id="radio-net" type="radio" name="power" value="net">
+								<label for="radio-net">Сетевые</label>
+							</li>
+						</ul>	
+						<button type="button">Показать</button>
+					</fieldset>
 				</div>
 				</form>
 				<div class="sorting">

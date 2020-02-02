@@ -45,7 +45,7 @@
 							<h3>Материалы</h3>
 							<a href="">На любой вкус</a>
 							<img src="img/icon-1.svg" alt="">
-							<!--Добавить ленточку new-->
+							
 						</div>
 					</li>
 					<li>
@@ -87,7 +87,7 @@
 			</section>
 			<div>
 				<h2>Популярные товары:</h2>
-				<a href="atalog.html">Все популярные товары</a>
+				<a href="catalog.html">Все популярные товары</a>
 			</div>
 			<section>
 				<ul>
@@ -125,7 +125,7 @@
 						<a href="">25 500 P.</a>
 					</li>
 					<li>
-						<img src="img/Perforator_1.jpg" alt="">
+						<img src="img/Perforator_1_new.jpg" alt="">
 						<p>
 							<a href="">
 								Перфоратор BOSCH
@@ -133,7 +133,6 @@
 							</a>
 						</p>
 						<a href="">12 500 P.</a>
-						<!--Добавить new-->
 					</li>
 				</ul>
 			</section>
@@ -196,18 +195,18 @@
 			<section>
 				<h2>Вход</h2>
 				<p>Введите свой логин и пароль</p>
-				<form action="http://technomart.com" method="post">
+				<form class="login" action="http://technomart.com" method="post">
 					<p>
-						<label for="login">Логин</label>
-						<input type="text" name="login" placeholder="Логин">
+						<label for="user-login">Логин</label>
+						<input id="user-login" type="email" name="login" placeholder="Логин">
 					</p>
 					<p>
-						<label for="password">Пароль</label>
-						<input type="password" name="password" placeholder="************">
+						<label for="user-password">Пароль</label>
+						<input id="user-password" type="password" name="password" placeholder="Пароль">
 					</p>
 					<p>
-        				<label for="checkbox">
-							<input type="checkbox" name="memory">
+        				<label for="user-memory">
+							<input id="user-memory" type="checkbox" name="memory">
 							Запомнить меня
 						</label>
 						<a href="">Забыли пароль?</a>
@@ -222,33 +221,36 @@
 			</section>
 			<section>
 				<h2>Регистрация</h2>
-				<form action="http://technomart.com">
+				<form action="http://technomart.com" method="post">
 					<p>
-						<label for="name">Имя</label>
-						<input type="text" name="name" required>
+						<label for="user-name">Имя</label>
+						<input id="user-name" type="text" name="name" required>
 					</p>
 					<p>
-						<label for="last-name">Фамилия</label>
-						<input type="text" name="last-name"required>
+						<label for="user-last-name">Фамилия</label>
+						<input id="user-last-name" type="text" name="last-name" required>
 					</p>
 					<p>
-						<label for="birthday">Дата рождения</label>
-						<input type="date" name="birthday">
-					</p>
-					<label for="sex">Пол</label>
-					<input type="radio" name="male" value="m">Мужской
-					<input type="radio" name="female" value="f">Женский
-					<p>
-						<label for="mail">Введите ваш почтовый ящик</label>
-						<input type="email" name="mail" required>
+						<label for="user-birthday">Дата рождения</label>
+						<input id="user-birthday" type="date" name="birthday">
 					</p>
 					<p>
-						<label for="password">Придумайте пароль</label>
-						<input type="password" name="password" required>
+						<label for="user-sex">Пол</label>
+							<input id="user-sex" type="radio" name="male" value="m">Мужской
+							<input id="user-sex" type="radio" name="female" value="f">Женский
+						
 					</p>
 					<p>
-						<label for="phone">Телефон</label>
-						<input type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+						<label for="user-mail">Введите ваш почтовый ящик</label>
+						<input id="user-mail" type="email" name="mail" required>
+					</p>
+					<p>
+						<label for="user-password">Придумайте пароль</label>
+						<input id="user-password" type="password" name="password" required>
+					</p>
+					<p>
+						<label for="user-phone">Телефон</label>
+						<input id="user-phone" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
 					</p>
 				</form>
 				<button type="submit">Зарегестрироваться</button>
@@ -279,9 +281,9 @@
 				</p>
 			</div>
 			<div class="fcenter">
-				<a href="https://vk.com"><img src="https://via.placeholder.com/150x100" alt="vk"></a>
-				<a href="https://www.facebook.com/"><img src="https://via.placeholder.com/150x100" alt="facebook"></a>
-				<a href="https://www.instagram.com"><img src="https://via.placeholder.com/150x100" alt="instagram"></a>
+				<a href="https://vk.com"><img src="img/vk-icon.png" alt="vk"></a>
+				<a href="https://www.facebook.com/"><img src="img/fb-icon.png" alt="facebook"></a>
+				<a href="https://www.instagram.com"><img src="img/insta-icon.png" alt="instagram"></a>
 			</div>
 			<div class="fright">
 				<p>
