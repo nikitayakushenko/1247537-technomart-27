@@ -8,9 +8,15 @@
 	<header>
 		<div class="begin">
 			<a href="index.html">Техномарт</a>
-			<input type="search" name="search" placeholder="Поиск:">
-			<div class="bookmarks">Закладки</div>
-			<div class="basket">Корзина</div>
+			<form class="search" action="http://technomart.com" method="post">
+				<input type="search" name="search" placeholder="Поиск:">
+			</form>
+			<div class="bookmarks">
+				<a href="">Закладки: 0</a>
+			</div>
+			<div class="basket">
+				<a href="">Корзина: 0</a>
+			</div>
 			<a href="">Оформить заказ</a>
 		</div>
 		<div class="address">
@@ -142,28 +148,60 @@
 			</div>
 			<section>
 				<ul>
-					<li><img src="img/bosch.svg" alt="BOSCH"></li>
-					<li><img src="img/Makita.svg" alt="Makita"></li>
-					<li><img src="img/DeWALT.svg" alt="DeWALT"></li>
-					<li><img src="img/Interskol.svg" alt="Interskol"></li>
-					<li><img src="img/Hitachi.svg" alt="Hitachi"></li>
-					<li><img src="img/LG.svg" alt="LG"></li>
-					<li><img src="img/AEG.svg" alt="AEG"></li>
-					<li><img src="img/Metabo.svg" alt="Metabo"></li>
+					<li><a href="https://www.bosch-professional.com"><img src="img/bosch.svg" alt="BOSCH"></a></li>
+					<li><a href="https://maklta.com"><img src="img/Makita.svg" alt="Makita"></a></li>
+					<li><a href="https://dewalt.top"><img src="img/DeWALT.svg" alt="DeWALT"></a></li>
+					<li><a href="https://www.interskol.ru"><img src="img/Interskol.svg" alt="Interskol"></a></li>
+					<li><a href="http://www.hitachi.com"><img src="img/Hitachi.svg" alt="Hitachi"></a></li>
+					<li><a href="https://www.lg.com"><img src="img/LG.svg" alt="LG"></a></li>
+					<li><a href="https://www.aeg.ua"><img src="img/AEG.svg" alt="AEG"></a></li>
+					<li><a href="https://www.metabo.com"><img src="img/Metabo.svg" alt="Metabo"></a></li>
 				</ul>
 			</section>
 			<article>
 				<h3>Сервисы</h3>
 				<p>Хороший интернет-магазин отличается от плохого не только ценами!
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-				<ul>
-					<li><a href="">Доставка</a></li>
-					<li><a href="">Гарантия</a></li>
-					<li><a href="">Кредит</a></li>
-				</ul>
-				<h2>Доставка</h2>
-				<p>Мы судовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-				<img src="img/del_car.png" alt="Доставка">
+				<div class="service">
+    				<input type="radio" name="delivery" id="delivery" value="" checked>
+    				<label for="delivery">
+    					<button type="button">Доставка</button>
+    				</label>
+    				<input type="radio" name="guarantee" id="guarantee" value="">
+    				<label for="guarantee">
+    					<button type="button">Гарантия</button>
+    				</label>
+    				<input type="radio" name="kredit" id="kredit" value="">
+    				<label for="kredit">
+    					<button type="button">Кредит</button>
+    				</label>
+
+    				<div id="content-1">
+      					<h2>Доставка</h2>
+						<p>Мы судовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+						<img src="img/del_car.png" alt="Доставка">
+    				</div>
+   				 	<div id="content-2">
+   				 		<h2>Гарантия</h2>
+      					<p>
+      						Если купленный у нас товар поломается или заискрит,
+							а также в случае пожара, спровоцированного его вогаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+							Дом уж восстановите как нибудь сами.
+						</p>
+						<img src="img/guarantee.png" alt="guarantee">
+    				</div>
+    				<div id="content-3">
+     					<h2>Кредит</h2>
+      					<p>
+      						Залезть в долговую яму стало проще!<br>
+							Кредитные консультанты придут вам на помощь.
+						</p>
+						<img src="img/kredit.png" alt="kredit"> 
+						<a href="">Отправить заявку</a>
+    				</div>
+ 				 </div>
+				
+				
 			</article>
 			<section>
 				<div class="left">
@@ -254,6 +292,23 @@
 					</p>
 				</form>
 				<button type="submit">Зарегестрироваться</button>
+			</section>
+			<section>
+				<form class="map-tip" action="http://technomart.com" method="post">
+					<p>
+						<label for="name-map">Ваше имя:</label>
+						<input id="name-map" type="text" name="name" placeholder="Имя Фамилия">
+					</p>
+					<p>
+						<label for="mail-map">Ваш e-mail:</label>
+						<input id="mail-map" type="email" name="mail" placeholder="email@example.com">
+					</p>
+					<p>
+						<label for="letter">Текст письма:</label>
+						<textarea id="letter"cols="60" rows="10" name="letter" placeholder="В свободной форме"></textarea>
+					</p>
+					<button type="submit">Отправить</button>
+				</form>
 			</section>
 		</main>
 	<footer>
