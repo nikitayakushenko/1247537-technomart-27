@@ -24,32 +24,42 @@
 </head>
 <body>
 	<header>
-		<div class="begin">
+		<div class="navigation">
 			<a href="index.html">Техномарт</a>
 			<input type="search" name="search" placeholder="Поиск:">
-			<div class="bookmarks">Закладки: 0</div>
-			<div class="basket">Корзина: 10</div>
+			<div class="bookmarks">
+				<a href="">Закладки: 0</a>
+			</div>
+			<div class="basket">
+				<a href="">Корзина: 10</a>
+			</div>
 			<a href="">Оформить заказ</a>
 		</div>
-		<div class="address">
+		<div class="data">
 			<p>
 				Интернет-магазин
 				строительных материалов
 				и инструментов для ремонта
 			</p>
-			<div class="phone">+7 (812) 555-05-55</div>
-			<p>г.Санкт-Петербург, ул. Б. Конюшенная, д, 19/8</p>
-			<form class="enter" action="http://technomart.com" method="post">
-				<input type="text" name="enter" placeholder="Равшан Джамшутович">
-			</form>
-			<a href="">Мои заказы</a>
-			<a href="">Личный кабинет</a>
+			<div class="direction">
+          		<div class="telephone">
+            		<p>+7 (812) 555-05-55</p>
+          		</div>
+          		<div class="address">
+            		<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          		</div>
+        	</div>
+        	<div class="enter">
+				<input type="text" name="enter">
+				<a href="">Мои заказы</a>
+				<a href="">Личный кабинет</a>
+			</div>
 		</div>
 		<nav>
 			<ul>
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="">Компания</a></li>
-				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="#">Каталог</a></li>
 				<li><a href="">Новости</a></li>
 				<li><a href="">Спецпредложения</a></li>
 				<li><a href="">Доставка</a></li>
@@ -84,7 +94,7 @@
 					<div id="slider-range">
 					</div>
 
-					<fieldset>
+					<fieldset class="manufactur">
 						<legend>Производители:</legend>
 						<ul>
 							<li>
@@ -109,7 +119,7 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset>
+					<fieldset class="power">
 						<legend>Питание:</legend>
 						<ul>
 							<li>
@@ -121,10 +131,10 @@
 								<label for="radio-net">Сетевые</label>
 							</li>
 						</ul>	
-						<button type="button">Показать</button>
+						<button type="submit">Показать</button>
 					</fieldset>
+					</form>
 				</div>
-				</form>
 				<div class="sorting">
 					<h4>Сортировка:</h4>
 					<ul>
@@ -135,10 +145,10 @@
 						<li><button type="button"><img src="img/icon-down-dir.svg" alt=""></button></li>
 					</ul>
 				</div>
-				<div class="mainlist">
+				<div class="main-list">
 					<ul>
 						<li>
-							<img src="img/Perforator_1.jpg" width="" height="" alt="Bosch3000">
+							<img src="img/Perforator_1.jpg" alt="Bosch3000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -149,7 +159,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="img/Perforator_2.jpg" width="" height="" alt="Bosch6000">
+							<img src="img/Perforator_2.jpg" alt="Bosch6000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -160,7 +170,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="img/Perforator_1_new.jpg" width="" height="" alt="Bosch2000">
+							<img src="img/Perforator_1_new.jpg" alt="Bosch2000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -170,7 +180,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="img/Perforator_1.jpg" width="" height="" alt="Bosch3000">
+							<img src="img/Perforator_1.jpg" alt="Bosch3000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -181,7 +191,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="img/Perforator_2_new.jpg" width="" height="" alt="Bosch6000">
+							<img src="img/Perforator_2_new.jpg" alt="Bosch6000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -192,7 +202,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="img/Perforator_3.jpg" width="" height="" alt="Bosch2000">
+							<img src="img/Perforator_3.jpg" alt="Bosch2000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -202,7 +212,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="img/Perforator_1_new.jpg" width="" height="" alt="Bosch3000">
+							<img src="img/Perforator_1_new.jpg" alt="Bosch3000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -213,7 +223,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="img/Perforator_2.jpg" width="" height="" alt="Bosch6000">
+							<img src="img/Perforator_2.jpg" alt="Bosch6000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -224,7 +234,7 @@
 							</p>
 						</li>
 						<li>
-							<img src="img/Perforator_1.jpg" width="" height="" alt="Bosch2000">
+							<img src="img/Perforator_1.jpg" alt="Bosch2000">
 							<p>
 								<a href="">
 									Перфоратор
@@ -250,19 +260,19 @@
 			</article>
 		</main>
 	<footer>
-		<section>
-			<div class="address"></div>
+		<section class="f-links">
+			<div class="address">
 				<a href="index.html">Техномарт</a>
 				<p>г.Санкт-Петербург, ул. Б. Конюшенная, д, 19/8
 				+7 (812) 555-05-55</p>
 			</div>
-			<div class="footnav">
+			<div class="f-nav">
 				<ul>
 				<li><a href="">Компания</a></li>
 				<li><a href="catalog.html">Каталог</a></li>
 				<li><a href="">Новости</a></li>
 				<li><a href="">Доставка</a></li>
-				<li><a href="">Контакты</a></li><br>
+				<li><a href="">Контакты</a></li>
 				<li><a href="">Материалы</a></li>
 				<li><a href="">Техника</a></li>
 				<li><a href="">Инструмент</a></li>
@@ -270,19 +280,19 @@
 			</ul>
 			</div>
 		</section>
-		<section>
-			<div class="fleft">
+		<section class="f-contacts">
+			<div class="f-left">
 				<p>
 					2010-2020 Компания "Техномарт"
 					Все права защищены
 				</p>
 			</div>
-			<div class="fcenter">
+			<div class="f-center">
 				<a href="https://vk.com"><img src="img/vk-icon.png" alt="vk"></a>
 				<a href="https://www.facebook.com/"><img src="img/fb-icon.png" alt="facebook"></a>
 				<a href="https://www.instagram.com"><img src="img/insta-icon.png" alt="instagram"></a>
 			</div>
-			<div class="fright">
+			<div class="f-right">
 				<p>
 					Обратная связь:
 					<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
