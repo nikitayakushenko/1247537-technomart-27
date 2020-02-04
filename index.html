@@ -31,8 +31,10 @@
             		<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           		</div>
         	</div>
-			<a href="">Войти</a>
-			<a href="">Регистрация</a>
+        	<div class="enter">
+				<a href="">Войти</a>
+				<a href="">Регистрация</a>
+			</div>
 		</div>
 		<nav>
 			<ul>
@@ -47,10 +49,9 @@
 		</nav>
 		</header>
 		<main>
-			<section>
+			<section class="catalog-tools">
 				<h1 class="main">Каталог инструментов</h1>
-				<ul>
-					<div class="block-1">
+				<ul class="block-1">	
 					<li>
 						<div class="catalog materials">
 							<h3>Материалы</h3>
@@ -72,8 +73,8 @@
 							<a href="catalog.html">Открыть каталог</a>
 						</div>
 					</li>
-					</div>
-					<div class="block-2">
+				</ul>
+				<ul class="block-2">	
 					<li>
 						<div class="catalog equipment">
 							<h3>Техника</h3>
@@ -95,15 +96,14 @@
 							<img src="img/icon-5.svg" alt="free">
 						</div>
 					</li>
-					</div>
 				</ul>
-				
 			</section>
-			<div>
+			<div class="line">
 				<h2>Популярные товары:</h2>
 				<a href="catalog.html">Все популярные товары</a>
 			</div>
-			<section>
+			<section class="catalog-perf">
+				<h2 class="visually-hidden">Каталог перфораторов</h2>
 				<ul>
 					<li>
 						<img src="img/Perforator_3.jpg" alt="perforator-1">
@@ -150,11 +150,12 @@
 					</li>
 				</ul>
 			</section>
-			<div>
+			<div class="popular-manuf">
 				<h2>Популярные производители:</h2>
 				<a href="">Все производители</a>
 			</div>
-			<section>
+			<section class="manufactures">
+				<h2 class="visually-hidden">Производители</h2>
 				<ul>
 					<li><a href="https://www.bosch-professional.com"><img src="img/bosch.svg" alt="BOSCH"></a></li>
 					<li><a href="https://maklta.com"><img src="img/Makita.svg" alt="Makita"></a></li>
@@ -166,13 +167,13 @@
 					<li><a href="https://www.metabo.com"><img src="img/Metabo.svg" alt="Metabo"></a></li>
 				</ul>
 			</section>
-			<section>
+			<section class="services">
 				<h3>Сервисы</h3>
 				<p>Хороший интернет-магазин отличается от плохого не только ценами!
 				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				<div class="service">
 					<div class="serv-dev">
-    					<input type="radio" name="delivery" id="delivery" value="deliv" checked>
+    					<input type="radio" name="service" id="delivery" value="delivery" checked>
     					<label for="delivery">Доставка</label>
     					<section class="content-1">
     						<h2>Доставка</h2>
@@ -183,7 +184,7 @@
     					</section>
     				</div>
 					<div class="serv-quar">
-    					<input type="radio" name="guarantee" id="guarantee" value="guarant">
+    					<input type="radio" name="service" id="guarantee" value="guarantee">
     					<label for="guarantee">Гарантия</label>
     					<section class="content-2">
     						<h2>Гарантия</h2>
@@ -196,7 +197,7 @@
     					</section>
     				</div>
     				<div class="serv-kred">
-    					<input type="radio" name="kredit" id="kredit" value="kred">
+    					<input type="radio" name="service" id="kredit" value="kredit">
     					<label for="kredit">Кредит</label>
     					<section class="content-3">
     						<h2>Кредит</h2>
@@ -210,7 +211,7 @@
     				</div>
  				 </div>
 			</section>
-			<section>
+			<section class="info">
 				<div class="left">
 					<h2>Компания "Техномарт"</h2>
 					<p>
@@ -237,8 +238,8 @@
 					<a href="">Заблудились? Напишите нам</a>
 				</div>
 			</section>
-			<section>
-				<h2>Вход</h2>
+			<section class="enter-form">
+				<h2 class="visually-hidden">Вход</h2>
 				<p>Введите свой логин и пароль</p>
 				<form class="login" action="http://technomart.com" method="post">
 					<p>
@@ -264,7 +265,8 @@
 					</button>
 				</form>
 			</section>
-			<section>
+			<section class="comment-form">
+				<h2 class="visually-hidden">Форма входа</h2>
 				<form class="map-tip" action="http://technomart.com" method="post">
 					<p>
 						<label for="name-map">Ваше имя:</label>
@@ -283,7 +285,8 @@
 			</section>
 		</main>
 	<footer>
-		<section>
+		<section class="ending">
+			<h2 class="visually-hidden">Окончание</h2>
 		<a href="index.html">Техномарт</a>
 		<ul>
 			<li><a href="">Компания</a></li>
@@ -303,7 +306,8 @@
             		<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           		</div>
 		</section>
-		<section>
+		<section class="links">
+			<h2 class="visually-hidden">Ссылки</h2>
 			<div class="f-left">
 				<p>
 					2010-2020 Компания "Техномарт"
