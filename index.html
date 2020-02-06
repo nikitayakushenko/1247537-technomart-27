@@ -8,7 +8,12 @@
 	<header>
 		<div class="navigation">
 			<a href="index.html">Техномарт</a>
-			<input type="search" name="search" placeholder="Поиск:">
+			<form class="search" action="http://technimart.com" method="post">
+				<button type="submit">
+					<img src="img/icon-search.png" alt="search-icon">
+				</button>
+				<input type="search" name="search" placeholder="Поиск:">
+			</form>
 			<div class="bookmarks">
 				<a href="">Закладки: 0</a>
 			</div>
@@ -24,12 +29,8 @@
 				и инструментов для ремонта
 			</p>
 			<div class="direction">
-          		<div class="telephone">
-            		<p>+7 (812) 555-05-55</p>
-          		</div>
-          		<div class="address">
-            		<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          		</div>
+            		<a href="tel:+78125550555">+7 (812) 555-05-55</a>
+            		<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</adress>
         	</div>
         	<div class="enter">
 				<a href="">Войти</a>
@@ -67,18 +68,10 @@
 						</div>
 					</li>
 					<li>
-						<input type="radio" name="slider" id="drill" value="slide-1" checked>
     					<div class="catalog_slide">
 							<h2>Дрели</h2>
 							<p>Соседям на радость!</p>
 							<a href="catalog.html">Открыть каталог</a>
-						</div>
-
-						<input type="radio" name="slider" id="perfor" value="slide-2" >
-    					<div class="catalog_slide-2">
-							<h2>Перфораторы</h2>
-							<p>Настоящие мужские игрушки</p>
-							<a href="catalog-2.html">Открыть каталог</a>
 						</div>
 					</li>
 				</ul>
@@ -293,33 +286,6 @@
 					<a href="">Заблудились? Напишите нам</a>
 				</div>
 			</section>
-			<section class="enter-form">
-				<h2 class="visually-hidden">Вход</h2>
-				<p>Введите свой логин и пароль</p>
-				<form class="login" action="http://technomart.com" method="post">
-					<p>
-						<label for="user-login">Логин</label>
-						<input id="user-login" type="email" name="login" placeholder="Логин">
-					</p>
-					<p>
-						<label for="user-password">Пароль</label>
-						<input id="user-password" type="password" name="password" placeholder="Пароль">
-					</p>
-					<p>
-        				<label for="user-memory">
-							<input id="user-memory" type="checkbox" name="memory">
-							Запомнить меня
-						</label>
-						<a href="">Забыли пароль?</a>
-					</p>
-					<button type="submit">
-						Войти
-					</button>
-					<button type="submit">
-						Закрыть
-					</button>
-				</form>
-			</section>
 			<section class="comment-form">
 				<h2 class="visually-hidden">Форма входа</h2>
 				<form class="map-tip" action="http://technomart.com" method="post">
@@ -355,11 +321,9 @@
 			<li><a href="">Спецпредложения</a></li>
 		</ul>
 		<div class="f-telephone">
-            		<p>+7 (812) 555-05-55</p>
-          		</div>
-          		<div class="f-address">
-            		<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          		</div>
+            <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</adress>
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </div>
 		</section>
 		<section class="links">
 			<h2 class="visually-hidden">Ссылки</h2>
