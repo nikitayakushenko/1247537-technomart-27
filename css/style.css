@@ -51,6 +51,9 @@ header {
 }
 
 nav {
+	height: 60px;
+	width: 940px;
+
 	list-style: none;
 	background-color: #293448;
 	box-shadow: 0px 5px 0px 0px;
