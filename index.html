@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Техномарт</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,7 +24,7 @@
 			<div class="basket">
 				<a href="">Корзина: 0</a>
 			</div>
-			<a href="">Оформить заказ</a>
+			<a class="checkout" href="">Оформить заказ</a>
 		</div>
 		<div class="data">
 			<p>
@@ -70,7 +72,7 @@
 						</div>
 					</li>
 					<li>
-    					<div class="catalog_slide">
+    					<div class="catalog slide">
 							<h2>Дрели</h2>
 							<p>Соседям на радость!</p>
 							<a href="catalog.html">Открыть каталог</a>
@@ -101,10 +103,10 @@
 					</li>
 				</ul>
 			</section>
-			<div class="line">
-				<h2>Популярные товары:</h2>
-				<a href="catalog.html">Все популярные товары</a>
-			</div>
+				<div class="line">
+					<h2>Популярные товары:</h2>
+					<a href="catalog.html">Все популярные товары</a>
+				</div>
 			<section class="catalog-perf">
 				<h2 class="visually-hidden">Каталог перфораторов</h2>
 				<ul>
@@ -176,14 +178,14 @@
 			<section class="manufactures">
 				<h2 class="visually-hidden">Производители</h2>
 				<ul>
-					<li><a href="https://www.bosch-professional.com"><img src="img/bosch.svg" alt="BOSCH"></a></li>
-					<li><a href="https://maklta.com"><img src="img/Makita.svg" alt="Makita"></a></li>
-					<li><a href="https://dewalt.top"><img src="img/DeWALT.svg" alt="DeWALT"></a></li>
-					<li><a href="https://www.interskol.ru"><img src="img/Interskol.svg" alt="Interskol"></a></li>
-					<li><a href="http://www.hitachi.com"><img src="img/Hitachi.svg" alt="Hitachi"></a></li>
-					<li><a href="https://www.lg.com"><img src="img/LG.svg" alt="LG"></a></li>
-					<li><a href="https://www.aeg.ua"><img src="img/AEG.svg" alt="AEG"></a></li>
-					<li><a href="https://www.metabo.com"><img src="img/Metabo.svg" alt="Metabo"></a></li>
+					<li><a href="https://www.bosch-professional.com"><img src="img/bosch.png" alt="BOSCH"></a></li>
+					<li><a href="https://maklta.com"><img src="img/Makita.png" alt="Makita"></a></li>
+					<li><a href="https://dewalt.top"><img src="img/DeWALT.png" alt="DeWALT"></a></li>
+					<li><a href="https://www.interskol.ru"><img src="img/Interskol.png" alt="Interskol"></a></li>
+					<li><a href="http://www.hitachi.com"><img src="img/Hitachi.png" alt="Hitachi"></a></li>
+					<li><a href="https://www.lg.com"><img src="img/LG.png" alt="LG"></a></li>
+					<li><a href="https://www.aeg.ua"><img src="img/AEG.png" alt="AEG"></a></li>
+					<li><a href="https://www.metabo.com"><img src="img/Metabo.png" alt="Metabo"></a></li>
 				</ul>
 			</section>
 			<section class="services">
@@ -253,7 +255,7 @@
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами,
 					заехав в наш офис:</p>
-					<img src="img/map.jpg" alt="map">
+					<img src="img/map.jpg" alt="map"><br>
 					<a href="">Заблудились? Напишите нам</a>
 				</div>
 			</section>
@@ -261,13 +263,15 @@
 	<footer>
 		<section class="ending">
 			<h2 class="visually-hidden">Окончание</h2>
-		<a href="index.html">Техномарт</a>
+		<a class="f-logo" href="index.html">Техномарт</a>
 		<ul>
 			<li><a href="">Компания</a></li>
 			<li><a href="catalog.html">Каталог</a></li>
 			<li><a href="">Новости</a></li>
 			<li><a href="">Доставка</a></li>
 			<li><a href="">Контакты</a></li>
+		</ul>
+		<ul class="color">
 			<li><a href="">Материалы</a></li>
 			<li><a href="">Техника</a></li>
 			<li><a href="">Инструмент</a></li>
@@ -303,8 +307,8 @@
 			</div>
 		</section>
 	</footer>
-	<div class="comment-form">
-				<h2 class="visually-hidden">Форма входа</h2>
+	<div class="visually-hidden">
+				<h2 class="f-form">Форма входа</h2>
 				<form class="map-tip" action="http://technomart.com" method="post">
 					<p>
 						<label for="name-map">Ваше имя:</label>
