@@ -6,6 +6,7 @@
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -38,10 +39,10 @@
 			<div class="bookmarks">
 				<a href="">Закладки: 0</a>
 			</div>
-			<div class="basket">
+			<div class="red-basket">
 				<a href="">Корзина: 10</a>
 			</div>
-			<a href="">Оформить заказ</a>
+			<a class="checkout" href="">Оформить заказ</a>
 		</div>
 		<div class="data">
 			<p>
@@ -57,9 +58,9 @@
         		<div class="login">
 					<a href="">Равшан Джамшутович</a>
 				</div>
-				<a href="">Мои заказы</a>
+				<a class="my orders" href="">Мои заказы</a>
 				<span class="point"></span>
-				<a href="">Личный кабинет</a>
+				<a class="my office" href="">Личный кабинет</a>
 			</div>
 		</div>
 		<nav>
@@ -90,6 +91,7 @@
 			<h2 class="main-name">Перфораторы</h2>
 			<section class="options">
 				<div class="lists">
+					<h4>Фильтр:</h4>
 					<form class="form-li" action="http://technomart.com" method="post">
 					<p>
   						<label for="amount">Цена:</label>
@@ -148,13 +150,19 @@
 						<li><button type="button">По цене</button></li>
 						<li><button type="button">По типу</button></li>
 						<li><button type="button">По фунцкионалу</button></li>
-						<li><button type="button"><img src="img/icon-up.svg" alt="Up"></button></li>
-						<li><button type="button"><img src="img/icon-down-dir.svg" alt="Down"></button></li>
+						<li><button class="sorting-b up" type="button"><img src="img/icon-up-dir.png" alt="Up"></button></li>
+						<li><button class="sorting-b down" type="button"><img src="img/icon-down-dir.png" alt="Down"></button></li>
 					</ul>
 				</div>
 				<div class="main-list">
+					<div class="catalog-perf">
 					<ul>
 						<li>
+							<div class="catalog-perfs">
+								<div class="actions">
+									<button type="button">Купить</button>
+									<button type="button">В закладки</button>
+								</div>
 							<img src="img/Perforator_1.jpg" alt="Bosch3000">
 							<p>
 								<a href="">
@@ -162,15 +170,16 @@
 									Bosch BFG 3000
 								</a>
 								<del>22 500 P.</del>
-								<a href="">15 500 P.</a>
-							</p>
-							<div class="visually-hidden">
-								<button type="button">Купить</button>
-								<button type="button">В закладки</button>
+								<a class="price" href="">15 500 P.</a>
 							</p>
 							</div>
 						</li>
 						<li>
+							<div class="catalog-perfs">
+								<div class="actions">
+									<button type="button">Купить</button>
+									<button type="button">В закладки</button>
+								</div>
 							<img src="img/Perforator_2.jpg" alt="Bosch6000">
 							<p>
 								<a href="">
@@ -178,28 +187,32 @@
 									Bosch BFG 6000
 								</a>
 								<del>30 500 P.</del>
-								<a href="">25 500 P.</a>
+								<a class="price" href="">25 500 P.</a>
 							</p>
-							<div class="visually-hidden">
-								<button type="button">Купить</button>
-								<button type="button">В закладки</button>
 							</div>
 						</li>
 						<li>
+							<div class="catalog-perfs">
+								<div class="actions">
+									<button type="button">Купить</button>
+									<button type="button">В закладки</button>
+								</div>
 							<img src="img/Perforator_1_new.jpg" alt="Bosch2000">
 							<p>
 								<a href="">
 									Перфоратор
 									Bosch BFG 2000
 								</a>
-								<a href="">12 500 P.</a>
+								<a class="price" href="">12 500 P.</a>
 							</p>
-							<div class="visually-hidden">
-								<button type="button">Купить</button>
-								<button type="button">В закладки</button>
 							</div>
 						</li>
 						<li>
+							<div class="catalog-perfs">
+								<div class="actions">
+									<button type="button">Купить</button>
+									<button type="button">В закладки</button>
+								</div>
 							<img src="img/Perforator_1.jpg" alt="Bosch3000">
 							<p>
 								<a href="">
@@ -207,14 +220,16 @@
 									Bosch BFG 3000
 								</a>
 								<del>22 500 P.</del>
-								<a href="">15 500 P.</a>
+								<a class="price" href="">15 500 P.</a>
 							</p>
-							<div class="visually-hidden">
-								<button type="button">Купить</button>
-								<button type="button">В закладки</button>
 							</div>
 						</li>
 						<li>
+							<div class="catalog-perfs">
+								<div class="actions">
+									<button type="button">Купить</button>
+									<button type="button">В закладки</button>
+								</div>
 							<img src="img/Perforator_2_new.jpg" alt="Bosch6000">
 							<p>
 								<a href="">
@@ -222,28 +237,32 @@
 									Bosch BFG 6000
 								</a>
 								<del>30 500 P.</del>
-								<a href="">25 500 P.</a>
+								<a class="price" href="">25 500 P.</a>
 							</p>
-							<div class="visually-hidden">
-								<button type="button">Купить</button>
-								<button type="button">В закладки</button>
 							</div>
 						</li>
 						<li>
+							<div class="catalog-perfs">
+								<div class="actions">
+									<button type="button">Купить</button>
+									<button type="button">В закладки</button>
+								</div>
 							<img src="img/Perforator_3.jpg" alt="Bosch2000">
 							<p>
 								<a href="">
 									Перфоратор
 									Bosch BFG 2000
 								</a>
-								<a href="">12 500 P.</a>
+								<a class="price" href="">12 500 P.</a>
 							</p>
-							<div class="visually-hidden">
-								<button type="button">Купить</button>
-								<button type="button">В закладки</button>
 							</div>
 						</li>
 						<li>
+							<div class="catalog-perfs">
+								<div class="actions">
+									<button type="button">Купить</button>
+									<button type="button">В закладки</button>
+								</div>
 							<img src="img/Perforator_1_new.jpg" alt="Bosch3000">
 							<p>
 								<a href="">
@@ -251,14 +270,16 @@
 									Bosch BFG 3000
 								</a>
 								<del>22 500 P.</del>
-								<a href="">15 500 P.</a>
+								<a class="price" href="">15 500 P.</a>
 							</p>
-							<div class="visually-hidden">
-								<button type="button">Купить</button>
-								<button type="button">В закладки</button>
 							</div>
 						</li>
 						<li>
+							<div class="catalog-perfs">
+								<div class="actions">
+									<button type="button">Купить</button>
+									<button type="button">В закладки</button>
+								</div>
 							<img src="img/Perforator_2.jpg" alt="Bosch6000">
 							<p>
 								<a href="">
@@ -266,35 +287,37 @@
 									Bosch BFG 6000
 								</a>
 								<del>30 500 P.</del>
-								<a href="">25 500 P.</a>
+								<a class="price" href="">25 500 P.</a>
 							</p>
-							<div class="visually-hidden">
-								<button type="button">Купить</button>
-								<button type="button">В закладки</button>
 							</div>
 						</li>
 						<li>
+							<div class="catalog-perfs">
+								<div class="actions">
+									<button type="button">Купить</button>
+									<button type="button">В закладки</button>
+								</div>
 							<img src="img/Perforator_1.jpg" alt="Bosch2000">
 							<p>
 								<a href="">
 									Перфоратор
 									Bosch BFG 2000
 								</a>
-								<a href="">12 500 P.</a>
+								<a class="price" href="">12 500 P.</a>
 							</p>
-							<div class="visually-hidden">
-								<button type="button">Купить</button>
-								<button type="button">В закладки</button>
 							</div>
 						</li>
 					</ul>
+					</div>
 				</div>
+				<div class="pages">
 				<ul>
 					<li><a href="">1</a></li>
 					<li><a href="">2</a></li>
 					<li><a href="">3</a></li>
 					<li><a href="">Следующая</a></li>
 				</ul>
+				</div>
 			</section>
 			<article>
 				<h2>Пара слов о перфораторах</h2>
@@ -304,28 +327,28 @@
 			</article>
 		</main>
 	<footer>
-		<section class="f-links">
+		<section class="ending">
 			<h2 class="visually-hidden">Окончание</h2>
-			<div class="address">
-				<a href="index.html">Техномарт</a>
-				<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-            	<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-			</div>
-			<div class="f-nav">
-				<ul>
-				<li><a href="">Компания</a></li>
-				<li><a href="#">Каталог</a></li>
-				<li><a href="">Новости</a></li>
-				<li><a href="">Доставка</a></li>
-				<li><a href="">Контакты</a></li>
-				<li><a href="">Материалы</a></li>
-				<li><a href="">Техника</a></li>
-				<li><a href="">Инструмент</a></li>
-				<li><a href="">Спецпредложения</a></li>
-			</ul>
-			</div>
+		<a class="f-logo" href="index.html">Техномарт</a>
+		<ul>
+			<li><a href="">Компания</a></li>
+			<li><a href="catalog.html">Каталог</a></li>
+			<li><a href="">Новости</a></li>
+			<li><a href="">Доставка</a></li>
+			<li><a href="">Контакты</a></li>
+		</ul>
+		<ul class="color">
+			<li><a href="">Материалы</a></li>
+			<li><a href="">Техника</a></li>
+			<li><a href="">Инструмент</a></li>
+			<li><a href="">Спецпредложения</a></li>
+		</ul>
+		<div class="f-telephone">
+            <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        </div>
 		</section>
-		<section class="f-contacts">
+		<section class="links">
 			<h2 class="visually-hidden">Ссылки</h2>
 			<div class="f-left">
 				<p>
@@ -350,8 +373,8 @@
 			</div>
 		</section>
 	</footer>
-	<div class="order">
-				<h2 class="visually-hidden">Товар добавлен</h2>
+	<div class="visually-hidden">
+				<h2 class="order">Товар добавлен</h2>
 				<div class="form-basket">
 					<img src="img/check-mark.svg" alt="Check">
 					<p>Товар добавлен в корзину</p>
