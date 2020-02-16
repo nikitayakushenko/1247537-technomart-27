@@ -380,7 +380,7 @@ nav a:active {
 	background: url(../img/icon-up-black.png) no-repeat center;
 }
 
-.up:aactive {
+.up:active {
 	background: url(../img/icon-up-red.png) no-repeat center;
 }
 
@@ -655,7 +655,6 @@ nav a:active {
  	margin-bottom: 7px;
   	padding: 7px 0;
   
-  	background-color: #63a63e;
   	border: 3px solid #63a63e;
   	border-bottom-color: #367315;
     border-radius:3px;
@@ -677,14 +676,12 @@ nav a:active {
 
 .actions button:hover:first-child,
 .actions button:focus:first-child {
-	background-color: #5fbb2d;
 	border: 3px solid #5fbb2d;
   	border-bottom-color: #367315;
     border-radius:3px;
 }
 
-.actions button:click:first-child {
-	background-color: #518534;
+.actions button:active:first-child {
 	border: 3px solid #518534;
 	border-radius:3px;
 }
@@ -800,10 +797,6 @@ nav a:active {
 
 .pages a:active {
 	border: 1px solid #ee3643;
-}
-
-.pages a:active {
-	border: 1px solid #ee3643;
 	background-color: #ee3643;
 }
 
@@ -914,7 +907,7 @@ nav a:active {
 	inset 0 1px 0 0 #405069;
 }
 
-.services label:aactive {
+.services label:active {
 	color: #32425c;
 
 	background-color: #ffffff;
