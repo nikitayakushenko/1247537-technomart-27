@@ -48,7 +48,7 @@ a {
 	background-color: #ca2c37;
 }
 
-.logo:click {
+.logo:active {
 	background-color: #ba2732;
 }
 
@@ -92,9 +92,9 @@ a {
 	background-color: #212a3a;
 }
 
-.bookmarks a:click,
-.basket a:click,
-.red-basket a:click {
+.bookmarks a:active,
+.basket a:active,
+.red-basket a:active {
 	background-color: #161d29;
 	color: rgba(255, 255, 255, 0.6);
 }
@@ -119,7 +119,7 @@ a {
 	background-color: #5fbb2d;
 }
 
-.checkout:click {
+.checkout:active {
 	background-color: #518534;
 	color: rgba(255, 255, 255, 0.6);
 }
@@ -182,7 +182,7 @@ header {
 	color: #ee3643;
 }
 
-.enter a:click {
+.enter a:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -228,7 +228,7 @@ nav a:focus {
   background-color: #293449;
 }
 
-nav a:click {
+nav a:active {
 	background-color: #1d2739;
 	color: rgba(255, 255, 255, 0.5);
 }
@@ -380,7 +380,7 @@ nav a:click {
 	background: url(../img/icon-up-black.png) no-repeat center;
 }
 
-.up:active {
+.up:aactive {
 	background: url(../img/icon-up-red.png) no-repeat center;
 }
 
@@ -447,7 +447,7 @@ nav a:click {
 	opacity: 0.2;
 }
 
-.catalog a:click {
+.catalog a:active {
 	background-color: #000000;
 	opacity: 0.3;
 }
@@ -499,7 +499,7 @@ nav a:click {
   	opacity: 1;
 }
 
-.slide a:click {
+.slide a:active {
   	background-color: #ba2732;
   	opacity: 1;
 }
@@ -578,7 +578,7 @@ nav a:click {
 	background-color: #ca2c37;
 }
 
-.line a:click {
+.line a:active {
   	background-color: #ba2732;
 }
 
@@ -694,7 +694,7 @@ nav a:click {
 	border: 3px solid #32425c;
 }
 
-.actions button:click:last-child {
+.actions button:active:last-child {
 	color: rgba(50, 66, 92, 0.3);
 
 	border: 3px solid #32425c;
@@ -777,7 +777,7 @@ nav a:click {
 	background-color: #ca2c37;
 }
 
-.price:click {
+.price:active {
   	background-color: #ba2732;
 }
 
@@ -798,7 +798,7 @@ nav a:click {
 	border: 1px solid #bdc6ca;
 }
 
-.pages a:click {
+.pages a:active {
 	border: 1px solid #ee3643;
 }
 
@@ -840,7 +840,7 @@ nav a:click {
 	background-color: #ca2c37;
 }
 
-.popular-manuf a:click {
+.popular-manuf a:active {
   	background-color: #ba2732;
 }
 
@@ -866,7 +866,7 @@ nav a:click {
 	0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
 
-.manufactures li:click {
+.manufactures li:active {
 	opacity: 0.3;
 	box-shadow: 
 	0px 4px 10px 0px rgba(41, 52, 73, 0.5);
@@ -914,7 +914,7 @@ nav a:click {
 	inset 0 1px 0 0 #405069;
 }
 
-.services label:active {
+.services label:aactive {
 	color: #32425c;
 
 	background-color: #ffffff;
@@ -1054,7 +1054,7 @@ article p {
 	text-decoration: underline;
 }
 
-.ending a:click {
+.ending a:active {
 	opacity: 0.5;
 }
 
@@ -1079,7 +1079,7 @@ article p {
 	background-color: #ca2c37;
 }
 
-.f-logo:click {
+.f-logo:active {
 	background-color: #ba2732;
 }
 
@@ -1118,7 +1118,7 @@ article p {
 
 .f-center a:hover,
 .f-center a:focus,
-.f-center a:click {
+.f-center a:active {
 	background-color: #ee3643;
 }
 
@@ -1131,7 +1131,7 @@ article p {
 	text-decoration: underline;
 }
 
-.f-right a:click {
+.f-right a:active {
 	color: #ee3643;
 }
 
