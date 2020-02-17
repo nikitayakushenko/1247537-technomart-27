@@ -8,13 +8,9 @@ body {
 	color: #000000;
 }
 
-body li {
-	list-style: none;
-}
-
-a {
+a, button {
+	cursor: pointer;
 	text-decoration: none;
-	color: #000000;
 }
 
 .visually-hidden {
@@ -30,10 +26,7 @@ a {
 }
 
 .logo {
-	padding-left: 55px;
-	padding-top: 13px;
-	padding-bottom: 15px;
-	padding-right: 56px;
+	padding: 13px 56px 15px 55px;
 
 	font-size: 20px;
 	color: #ffffff;
@@ -56,16 +49,7 @@ a {
 	background-color: #293449;
 }
 
-.bookmarks a {
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 17px;
-	line-height: 18px;
-	text-align: left;
-
-	color: #ffffff;
-}
-
-.basket a {
+.top-b {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
@@ -74,36 +58,21 @@ a {
 }
 
 .red-basket a {
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 17px;
-	line-height: 18px;
-	text-align: left;
-	color: #ffffff;
-
 	background-color: #ee3643;
 }
 
-.bookmarks a:hover,
-.bookmarks a:focus,
-.basket a:hover,
-.basket a:focus,
-.red-basket a:hover,
-.red-basket a:focus {
+.top-b:hover,
+.top-b:focus {
 	background-color: #212a3a;
 }
 
-.bookmarks a:active,
-.basket a:active,
-.red-basket a:active {
+.top-b:active {
 	background-color: #161d29;
 	color: rgba(255, 255, 255, 0.6);
 }
 
 .checkout {
-	padding-left: 20px;
-	padding-top: 14px;
-	padding-bottom: 13px;
-	padding-right: 22px;
+	padding: 14px 22px 13px 20px;
 
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;
@@ -136,10 +105,7 @@ header {
 }
 
 .direction a {
-	padding-left: 74px;
-	padding-top: 13px;
-	padding-bottom: 11px;
-	padding-right: 52px;
+	padding: 13px 52px 11px 74px;
 
 	font-size: 21px;
 	font-family: "Cuprum", Arial, sans-serif;
@@ -398,10 +364,7 @@ nav a:active {
 }
 
 .catalog h3 {
-	padding-left: 23px;
-	padding-top: 26px;
-	padding-bottom: 75px;
-	padding-right: 166px;
+	padding: 26px 166px 75px 23px;
 
 	font-size: 24px;
 	font-family: "Cuprum", Arial, sans-serif;
@@ -430,6 +393,8 @@ nav a:active {
 }
 
 .catalog a {
+	padding: 12px 24px 14px 24px;
+
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
@@ -443,35 +408,19 @@ nav a:active {
 
 .catalog a:hover,
 .catalog a:focus {
-	background-color: #000000;
-	opacity: 0.2;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 .catalog a:active {
-	background-color: #000000;
-	opacity: 0.3;
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .materials {
 	background-color: #ffbf47;
 }
 
-.materials a {
-	padding-left: 24px;
-	padding-top: 12px;
-	padding-bottom: 14px;
-	padding-right: 24px;	
-}
-
 .tool {
 	background-color: #3bbce3;
-}
-
-.tool a {
-	padding-left: 24px;
-	padding-top: 12px;
-	padding-bottom: 14px;
-	padding-right: 24px;
 }
 
 .slide {
@@ -479,10 +428,7 @@ nav a:active {
 }
 
 .slide a {
-	padding-left: 49px;
-	padding-top: 14px;
-	padding-bottom: 14px;
-	padding-right: 45px;
+	padding: 14px 45px 14px 49px;
 
 	font-family: "Cuprum", Arial, sans-serif;
   	font-size: 14px;
@@ -508,39 +454,15 @@ nav a:active {
 	background-color: #dc91d8;
 }
 
-.equipment a {
-	padding-left: 24px;
-	padding-top: 12px;
-	padding-bottom: 14px;
-	padding-right: 24px;
-}
-
 .sales {
 	background-color: #8ed78f;
-}
-
-.sales a {
-	padding-left: 24px;
-	padding-top: 12px;
-	padding-bottom: 14px;
-	padding-right: 24px;
 }
 
 .delivery {
 	background-color: #ffc047;
 }
 
-.delivery a {
-	padding-left: 24px;
-	padding-top: 12px;
-	padding-bottom: 14px;
-	padding-right: 24px;
-}
-
-.block-1 li {
-	list-style: none;
-}
-
+.block-1 li,
 .block-2 li {
 	list-style: none;
 }
@@ -557,10 +479,7 @@ nav a:active {
 }
 
 .line a {
-	padding-left: 55px;
-	padding-top: 14px;
-	padding-bottom: 14px;
-	padding-right: 55px;
+	padding: 14px 55px 14px 55px;
 
 	float: right;
 
@@ -583,14 +502,9 @@ nav a:active {
 }
 
 .catalog-perf li {
-	width: 700px;
-	height: 318px;
-	
-}
-
-.catalog-perf li {
 	position: relative;
   	display: inline-block;
+	height: 318px;
   	width: 218px;
   	margin-right: 20px;
   	margin-bottom: 20px;
@@ -666,12 +580,13 @@ nav a:active {
   	line-height: 18px;
   	text-decoration: none;
   	text-transform: uppercase;
+  	background-color: #63a63e;
 }
 
 .actions button:last-child {
-  color: #32425c;
-  background: white;
-  border-bottom-color: #63a63e;
+  	color: #32425c;
+  	background: white;
+  	border-bottom-color: #63a63e;
 }
 
 .actions button:hover:first-child,
@@ -679,6 +594,7 @@ nav a:active {
 	border: 3px solid #5fbb2d;
   	border-bottom-color: #367315;
     border-radius:3px;
+    background-color: #5fbb2d;
 }
 
 .actions button:active:first-child {
@@ -710,12 +626,8 @@ nav a:active {
   	max-width: 100%;
 }
 
-.catalog-perfs .actions {
-  display: none;
-}
-
 .catalog-perfs:hover .actions {
-  display: block;
+  	display: block;
 }
 
 .catalog-perfs .title {
@@ -739,10 +651,7 @@ nav a:active {
 }
 
 .catalog-perfs .price {
-	padding-left: 36px;
-	padding-top: 13px;
-	padding-bottom: 13px;
-	padding-right: 40px;
+	padding: 13px 40px 13px 36px;
 
 	font-size: 17px;
 	font-family: "PTSans", Arial, sans-serif;
@@ -838,10 +747,7 @@ nav a:active {
 }
 
 .manufactures li {
-	padding-left: 47px;
-	padding-top: 53px;
-	padding-bottom: 55px;
-	padding-right: 47px;
+	padding: 53px 47px 55px 47px;
 	margin-right: 20px;
 	margin-bottom: 20px;
 
@@ -883,10 +789,7 @@ nav a:active {
 }
 
 .services label {
-	padding-left: 23px;
-	padding-top: 21px;
-	padding-bottom: 20px;
-	padding-right: 140px;
+	padding: 21px 140px 20px 23px;
 
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 21px;
@@ -962,10 +865,7 @@ nav a:active {
 }
 
 .left a {
-	padding-left: 41px;
-	padding-top: 14px;
-	padding-bottom: 12px;
-	padding-right: 40px;
+	padding: 14px 40px 12px 41px;
 
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
@@ -983,10 +883,7 @@ nav a:active {
 }
 
 .right a {
-	padding-left: 63px;
-	padding-top: 14px;
-	padding-bottom: 12px;
-	padding-right: 59px;
+	padding: 14px 59px 12px 63px;
 
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
@@ -1052,10 +949,7 @@ article p {
 }
 
 .f-logo {
-	padding-left: 41px;
-	padding-top: 20px;
-	padding-bottom: 25px;
-	padding-right: 41px;
+	padding: 20px 41px 25px 41px;
 
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
