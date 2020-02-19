@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 
-	font-family: "PT Sans", "Cuprum", Arial, sans-serif;
+	font-family: "Cuprum", "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	color: #000000;
@@ -14,7 +14,12 @@ a, button {
 }
 
 .visually-hidden {
-	display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
 }
 
 .navigation {
@@ -33,51 +38,102 @@ a, button {
 	text-transform: uppercase;
 
 	background-color: #ee3643;
-	box-shadow: 0 5px 0 0 rgba(181, 41, 51, 0.24);	
+	box-shadow: 0 5px 0 0 #b52933;	
 }
 
 .logo:hover,
 .logo:focus {
 	background-color: #ca2c37;
+	box-shadow: 0 5px 0 0 #9a212a;
 }
 
 .logo:active {
 	background-color: #ba2732;
+	box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 .navigation input {
 	background-color: #293449;
+	border: 0;
 }
 
-.top-b {
+.navigation button {
+	background-color: #293449;
+}
+
+.navigation svg {
+	opacity: 0.3;
+}
+
+.navigation button:hover svg,
+.navigation button:focus svg {
+	opacity: 1;
+	background-color: #212a3a;
+}
+
+.top-buttons {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
-	text-align: left;
+	color: #ffffff;
+}
+
+.top-buttons svg,
+.basket svg,
+.red-basket svg {
+	opacity: 0.3;
+}
+
+.top-buttons:hover svg,
+.basket:hover svg,
+.red-basket:hover svg {
+	opacity: 1;
+}
+
+.top-buttons:active svg,
+.basket:active svg,
+.red-basket:active svg {
+	opacity: 0.3;
+}
+
+.basket a {
 	color: #ffffff;
 }
 
 .red-basket a {
+	color: #ffffff;
+
 	background-color: #ee3643;
 }
 
-.top-b:hover,
-.top-b:focus {
+.red-basket a:hover,
+.red-basket a:focus {
+	background-color: #ca2c37;
+}
+
+.red-basket a:active {
+	background-color: #ba2732;
+}
+
+.top-buttons:hover,
+.top-buttons:focus,
+.basket a:hover,
+.basket a:focus {
 	background-color: #212a3a;
 }
 
-.top-b:active {
+.top-buttons:active,
+.basket a:active {
 	background-color: #161d29;
 	color: rgba(255, 255, 255, 0.6);
 }
 
 .checkout {
-	padding: 14px 22px 13px 20px;
+	/*padding: 14px 22px 13px 20px;*/
 
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 18px;
-	text-align: left;
 	color: #ffffff;
 
 	background-color: #63a63e;
@@ -110,7 +166,6 @@ header {
 	font-size: 21px;
 	font-family: "Cuprum", Arial, sans-serif;
 	line-height: 21px;
-	text-align: left;
 	color: #ee3643;
 
 	border: 3px solid #ffffff;
@@ -125,38 +180,48 @@ header {
 	color: #32425c;
 }
 
-.enter a:first-child {
+.enter-buttons a {
 	font-size: 21px;
 	font-family: "Cuprum", Arial, sans-serif;
 	line-height: 21px;
-	text-align: left;
+	color: #000000;
 
 	background-color: #ffffff;
 }
 
-.enter a:last-child:not(.my) {
-	font-size: 21px;
-	font-family: "Cuprum", Arial, sans-serif;
-	line-height: 21px;
-	text-align: left;
-
-	background-color: #ffffff;
-}
-
-.enter a:hover,
-.enter a:focus {
+.enter-buttons a:hover,
+.enter-buttons a:focus {
 	color: #ee3643;
 }
 
-.enter a:active {
+.enter-buttons a:active {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.enter-buttons a:hover path,
+.enter-buttons a:focus path {
+	fill: #293449;
+}
+
+.enter-buttons a:active path {
+	fill: #c5c5c5;
+}
+
+.enter-buttons a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.login {
+	width: 299px;
+	height: 45px;
+
+	background: #fff;
 }
 
 .login a {
 	font-size: 21px;
 	font-family: "Cuprum", Arial, sans-serif;
 	line-height: 21px;
-	text-align: left;
 	color: #000000;
 }
 
@@ -165,8 +230,31 @@ header {
 	font-family: "Cuprum", Arial, sans-serif;
 	line-height: 18px;
 	text-decoration: underline;
-	text-align: left;
 	color: #32425c;
+}
+
+.my:hover,
+.my:focus {
+	color: #ee3643;
+}
+
+.my:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.login-name {
+	font-size: 21px;
+	font-family: "Cuprum", Arial, sans-serif;
+	line-height: 21px;
+}
+
+.login-name:hover path,
+.login-name:focus path {
+	fill: #293449;
+}
+
+.login-name:active {
+	opacity: 0.3;
 }
 
 nav {
@@ -203,8 +291,8 @@ nav a:active {
 	font-family: "PTSans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
-	text-align: left;
 	text-transform: uppercase;
+	list-style: none;
 	color: #000000;
 }
 
@@ -215,7 +303,6 @@ nav a:active {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
 	line-height: 30px;
-	text-align: left;
 	color: #32425c;
 
 	background-color: #f2f6f8;
@@ -230,7 +317,6 @@ nav a:active {
   	line-height: 18px;
   	font-weight: normal;
   	text-transform: uppercase;
-  	text-align: left;
   	color: #000000;
 
   	background-color: #f7f3ec;
@@ -242,7 +328,6 @@ nav a:active {
   	font-weight: bold;
   	line-height: 30px;
   	text-transform: uppercase;
-  	text-align: left;
   	color: #000000;
 }
 .lists legend {
@@ -251,7 +336,6 @@ nav a:active {
   	font-weight: bold;
   	line-height: 30px;
   	text-transform: uppercase;
-  	text-align: left;
   	color: #000000;
 }
 
@@ -260,7 +344,6 @@ nav a:active {
   	font-size: 15px;
   	line-height: 20px;
   	text-transform: uppercase;
-  	text-align: left;
   	color: #000000;
 }
 
@@ -269,7 +352,6 @@ nav a:active {
   	font-size: 15px;
   	line-height: 20px;
   	text-transform: uppercase;
-  	text-align: left;
   	color: #000000;
 }
 
@@ -300,8 +382,11 @@ nav a:active {
   	line-height: 18px;
   	font-weight: normal;
   	text-transform: uppercase;
-  	text-align: left;
   	color: #000000;
+}
+
+.sorting svg {
+	fill: #c5c5c5;
 }
 
 .sorting button:not(.sorting-b) {
@@ -309,7 +394,6 @@ nav a:active {
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
-	text-align: left;
 	color: rgba(0, 0, 0, 0.3);
 
 	border: 0;
@@ -318,13 +402,6 @@ nav a:active {
 }
 
 .sorting-b {
-	font-family: "PTSans", Arial, sans-serif;
-	font-size: 13px;
-	line-height: 18px;
-	text-transform: uppercase;
-	text-align: left;
-	color: rgba(0, 0, 0, 0.3);
-
 	border: 0;
 	background-color: #f7f3ec;
 }
@@ -341,36 +418,33 @@ nav a:active {
 	border-bottom: 0;
 }
 
-.up:hover,
-.up:focus {
-	background: url(../img/icon-up-black.png) no-repeat center;
+.up path,
+.down path {
+	fill: #c5c5c5;
 }
 
-.up:active {
-	background: url(../img/icon-up-red.png) no-repeat center;
+.up svg:hover path,
+.up svg:focus path,
+.down svg:hover path,
+.down svg:focus path {
+	fill: #000000;
 }
 
-.down:hover,
-.down:focus {
-	background: url(../img/icon-down-black.png) no-repeat center;
-}
-
-.down:active {
-	background: url(../img/icon-down-red.png) no-repeat center;
+.up svg:active path,
+.down svg:active path {
+	fill: #ee3643;
 }
 
 .catalog {
 	width: 300px;
+	padding: 26px 166px 75px 23px;
 }
 
 .catalog h3 {
-	padding: 26px 166px 75px 23px;
-
 	font-size: 24px;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-weight: bold;
 	line-height: 30px;
-	text-align: left;
 	color: #ffffff;	
 }
 
@@ -379,7 +453,6 @@ nav a:active {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-weight: bold;
 	line-height: 36px;
-	text-align: left;
 	color: #ffffff;	
 }
 
@@ -388,7 +461,6 @@ nav a:active {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-weight: normal;
 	line-height: 24px;
-	text-align: left;
 	color: #ffffff;	
 }
 
@@ -467,18 +539,21 @@ nav a:active {
 	list-style: none;
 }
 
-.line {
+.line,
+.popular-manuf {
 	width: 940px;
 	height: 89px;
 
 	background-color: #f9f5f0;
 }
 
-.line h2 {
+.line h2,
+.popular-manuf h2 {
 	text-transform: uppercase;
 }
 
-.line a {
+.line a,
+.popular-manuf a {
 	padding: 14px 55px 14px 55px;
 
 	float: right;
@@ -493,11 +568,14 @@ nav a:active {
 }
 
 .line a:hover,
-.line a:focus {
+.line a:focus,
+.popular-manuf a:hover,
+.popular-manuf a:focus {
 	background-color: #ca2c37;
 }
 
-.line a:active {
+.line a:active,
+.popular-manuf a:active {
   	background-color: #ba2732;
 }
 
@@ -576,7 +654,7 @@ nav a:active {
   	color: white;
   	font-size: 14px;
   	font-weight: normal;
-  	font-family: "Cuprum", sans-serif;
+  	font-family: "Cuprum", Arial, sans-serif;
   	line-height: 18px;
   	text-decoration: none;
   	text-transform: uppercase;
@@ -600,6 +678,7 @@ nav a:active {
 .actions button:active:first-child {
 	border: 3px solid #518534;
 	border-radius:3px;
+	background-color: #518534;
 }
 
 .actions button:hover:last-child,
@@ -687,6 +766,10 @@ nav a:active {
   	background-color: #ba2732;
 }
 
+.pages li {
+	list-style: none;
+}
+
 .pages a {
 	font-family: "PTSans", Arial, sans-serif;
 	font-size: 13px;
@@ -707,43 +790,6 @@ nav a:active {
 .pages a:active {
 	border: 1px solid #ee3643;
 	background-color: #ee3643;
-}
-
-.popular-manuf {
-	width: 940px;
-	height: 89px;
-
-	background-color: #f9f5f0;
-}
-
-.popular-manuf h2 {
-	text-transform: uppercase;
-}
-
-.popular-manuf a {
-	padding-left: 55px;
-	padding-top: 14px;
-	padding-bottom: 14px;
-	padding-right: 55px;
-
-	float: right;
-
-	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: #ffffff;
-
-	background-color: #ee3643;
-	border-radius: 3px;
-}
-
-.popular-manuf a:hover,
-.popular-manuf a:focus {
-	background-color: #ca2c37;
-}
-
-.popular-manuf a:active {
-  	background-color: #ba2732;
 }
 
 .manufactures li {
@@ -771,9 +817,17 @@ nav a:active {
 	0px 4px 10px 0px rgba(41, 52, 73, 0.5);
 }
 
+.description {
+	width: 100%;
+	height: 190px;
+
+	background-color: #f4f7f9;
+}
+
 .services h3 {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
+	line-height: 30px;
 	color: #000000;
 }
 
@@ -785,7 +839,6 @@ nav a:active {
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
-	text-align: left;
 }
 
 .services label {
@@ -795,7 +848,6 @@ nav a:active {
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 30px;
-	text-align: left;
 	color: #ffffff;
 
 	background-color: #32425c;
@@ -822,7 +874,6 @@ nav a:active {
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 36px;
-	text-align: left;
 	color: #32425c;
 }
 
@@ -843,7 +894,6 @@ nav a:active {
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: normal;
-	text-align: left;
 	color: #000000;
 }
 
@@ -852,15 +902,17 @@ nav a:active {
 	font-size: 13px;
 	font-weight: normal;
 	line-height: 24px;
-	text-align: left;
 	color: #000000;
+}
+
+.left ul {
+	list-style-image: url("img/red-point.png");
 }
 
 .left li {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 20px;
-	text-align: left;
 	color: #000000;
 }
 
@@ -876,6 +928,15 @@ nav a:active {
 
 	background-color: #ee3643;
 	border-radius: 5px;
+}
+
+.left a:hover,
+.left a:focus {
+  	background-color: #ca2c37;
+}
+
+.left a:active {
+  	background-color: #ba2732;
 }
 
 .right img {
@@ -908,14 +969,12 @@ article h2 {
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
-	text-align: left;
 }
 
 article p {
 	font-family: "PTSans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	text-align: left;
 }
 
 .ending {
@@ -931,7 +990,6 @@ article p {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
-	text-align: left;
 	color: #ffffff;
 }
 
@@ -939,13 +997,14 @@ article p {
 	color: #ffd180;
 }
 
-.ending a:hover:not(.f-logo),
-.ending a:focus:not(.f-logo) {
+.ending a:hover:not(.f-logo, .f-telephone),
+.ending a:focus:not(.f-logo, .f-telephone) {
 	text-decoration: underline;
 }
 
-.ending a:active {
+.ending a:active:not(.f-logo, .f-telephone) {
 	opacity: 0.5;
+	text-decoration: none;
 }
 
 .f-logo {
@@ -957,24 +1016,26 @@ article p {
 	text-transform: uppercase;
 
 	background-color: #ee3643;
-	box-shadow: 0 5px 0 0 rgba(181, 41, 51, 0.24);
+	box-shadow: 0 5px 0 0 #b52933;
 }
 
 .f-logo:hover,
 .f-logo:focus {
 	text-decoration: none;
 	background-color: #ca2c37;
+	box-shadow: 0 5px 0 0 #9a212a;
 }
 
 .f-logo:active {
+	opacity: 1;
 	background-color: #ba2732;
+	box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 .f-telephone address {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 18px;
 	font-style: normal;
-	text-align: left;
 	line-height: 24px;
 	color: #f3f7f9;
 }
@@ -991,7 +1052,6 @@ article p {
 .links p {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 16px;
-	text-align: left;
 	line-height: 18px;
 	color: #ffffff;
 }
@@ -1020,6 +1080,7 @@ article p {
 
 .f-right a:active {
 	color: #ee3643;
+	text-decoration: none;
 }
 
 .form {
@@ -1041,7 +1102,6 @@ article p {
   	font-family: "Cuprum", Arial, sans-serif;
   	font-size: 18px;
   	line-height: 18px;
-  	text-align: left;
 	color: #000000;
 }
 
