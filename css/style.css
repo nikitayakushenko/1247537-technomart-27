@@ -62,6 +62,9 @@ a, button {
 }
 
 .navigation svg {
+	width: 15px;
+  	height: 15px;
+
 	opacity: 0.3;
 }
 
@@ -81,6 +84,9 @@ a, button {
 .top-buttons svg,
 .basket svg,
 .red-basket svg {
+	width: 15px;
+  	height: 15px;
+  	
 	opacity: 0.3;
 }
 
@@ -271,6 +277,10 @@ nav li {
 }
 
 nav a {
+	padding-left: 28px;
+	padding-right: 30px;
+	margin: 0;
+
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 17px;
 	line-height: 17px;
@@ -293,6 +303,10 @@ nav a:active {
 	line-height: 18px;
 	text-transform: uppercase;
 	list-style: none;
+	color: #000000;
+}
+
+.scroll a {
 	color: #000000;
 }
 
@@ -373,6 +387,10 @@ nav a:active {
 	background-color: #f7f3ec;
 }
 
+.sorting li {
+	list-style: none;
+}
+
 .sorting h4 {
 	width: 220px;
   	height: 38px;
@@ -415,6 +433,7 @@ nav a:active {
 
 .sorting button:active {
 	color: #ee3643;
+
 	border-bottom: 0;
 }
 
@@ -767,6 +786,7 @@ nav a:active {
 }
 
 .pages li {
+	display: inline;
 	list-style: none;
 }
 
@@ -779,7 +799,16 @@ nav a:active {
 	color: #000000;
 
 	border: 1px solid #e5e5e5;
+	border-radius: 3px;
 	background-color: #ffffff;
+}
+
+.pages a:not(.next) {
+	padding: 14px 15px 15px 16px;
+}
+
+.next {
+	padding: 14px 32px 13px 32px;
 }
 
 .pages a:hover,
@@ -906,7 +935,7 @@ nav a:active {
 }
 
 .left ul {
-	list-style-image: url("img/red-point.png");
+	list-style-image: url("../img/red-point.png");
 }
 
 .left li {
@@ -957,6 +986,15 @@ nav a:active {
 	border-radius: 5px;
 }
 
+.right a:hover,
+.right a:focus {
+  	background-color: #ca2c37;
+}
+
+.right a:active {
+  	background-color: #ba2732;
+}
+
 article {
 	height: 261px;
 	color: #000000;
@@ -997,12 +1035,12 @@ article p {
 	color: #ffd180;
 }
 
-.ending a:hover:not(.f-logo, .f-telephone),
-.ending a:focus:not(.f-logo, .f-telephone) {
+.ending a:hover:not(.f-logo),
+.ending a:focus:not(.f-logo) {
 	text-decoration: underline;
 }
 
-.ending a:active:not(.f-logo, .f-telephone) {
+.ending a:active:not(.f-logo) {
 	opacity: 0.5;
 	text-decoration: none;
 }
