@@ -190,7 +190,6 @@ header {
 	font-size: 21px;
 	font-family: "Cuprum", Arial, sans-serif;
 	line-height: 21px;
-	color: #000000;
 
 	background-color: #ffffff;
 }
@@ -231,7 +230,8 @@ header {
 	color: #000000;
 }
 
-.my {
+.my-orders,
+.my-office {
 	font-size: 16px;
 	font-family: "Cuprum", Arial, sans-serif;
 	line-height: 18px;
@@ -239,12 +239,15 @@ header {
 	color: #32425c;
 }
 
-.my:hover,
-.my:focus {
+.my-orders:hover,
+.my-orders:focus,
+.my-office:hover,
+.my-office:focus {
 	color: #ee3643;
 }
 
-.my:active {
+.my-orders:active,
+.my-office:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -303,7 +306,6 @@ nav a:active {
 	line-height: 18px;
 	text-transform: uppercase;
 	list-style: none;
-	color: #000000;
 }
 
 .scroll a {
@@ -331,7 +333,6 @@ nav a:active {
   	line-height: 18px;
   	font-weight: normal;
   	text-transform: uppercase;
-  	color: #000000;
 
   	background-color: #f7f3ec;
 }
@@ -339,18 +340,16 @@ nav a:active {
 .lists label:first-child {
 	font-family: "PTSans", Arial, sans-serif;
   	font-size: 17px;
-  	font-weight: bold;
+  	font-weight: 700;
   	line-height: 30px;
   	text-transform: uppercase;
-  	color: #000000;
 }
 .lists legend {
 	font-family: "PTSans", Arial, sans-serif;
   	font-size: 17px;
-  	font-weight: bold;
+  	font-weight: 700;
   	line-height: 30px;
   	text-transform: uppercase;
-  	color: #000000;
 }
 
 .manufactur label {
@@ -358,7 +357,6 @@ nav a:active {
   	font-size: 15px;
   	line-height: 20px;
   	text-transform: uppercase;
-  	color: #000000;
 }
 
 .power label {
@@ -366,7 +364,6 @@ nav a:active {
   	font-size: 15px;
   	line-height: 20px;
   	text-transform: uppercase;
-  	color: #000000;
 }
 
 .power button {
@@ -375,7 +372,6 @@ nav a:active {
   	line-height: 18px;
   	text-transform: uppercase;
   	text-align: center;
-  	color: #000000;
 
   	border: 1px solid #e5e5e5;
   	background-color: #ffffff;
@@ -400,7 +396,6 @@ nav a:active {
   	line-height: 18px;
   	font-weight: normal;
   	text-transform: uppercase;
-  	color: #000000;
 }
 
 .sorting svg {
@@ -437,20 +432,16 @@ nav a:active {
 	border-bottom: 0;
 }
 
-.up path,
-.down path {
+.sort-btn svg {
 	fill: #c5c5c5;
 }
 
-.up svg:hover path,
-.up svg:focus path,
-.down svg:hover path,
-.down svg:focus path {
+.sort-btn:hover svg,
+.sort-btn:focus svg {
 	fill: #000000;
 }
 
-.up svg:active path,
-.down svg:active path {
+.sort-btn:active svg {
 	fill: #ee3643;
 }
 
@@ -462,7 +453,7 @@ nav a:active {
 .catalog h3 {
 	font-size: 24px;
 	font-family: "Cuprum", Arial, sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 30px;
 	color: #ffffff;	
 }
@@ -470,7 +461,7 @@ nav a:active {
 .catalog h2 {
 	font-size: 36px;
 	font-family: "Cuprum", Arial, sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 36px;
 	color: #ffffff;	
 }
@@ -598,7 +589,7 @@ nav a:active {
   	background-color: #ba2732;
 }
 
-.catalog-perf li {
+.product {
 	position: relative;
   	display: inline-block;
 	height: 318px;
@@ -607,14 +598,14 @@ nav a:active {
   	margin-bottom: 20px;
   
   	line-height: 20px;
-  	font-weight: bold;
+  	font-weight: 700;
   	text-align: center;
   
   	border: 1px solid #ccc;
 }
 
-.catalog-perf li:hover,
-.catalog-perf li:focus {
+.product:hover,
+.product:focus {
 	box-shadow:
 	0px 10px 25px 0px rgba(41, 52, 73, 0.5);
 }
@@ -622,7 +613,7 @@ nav a:active {
 .catalog-perfs a {
 	font-size: 18px;
 	font-family: "PTSans", Arial, sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 20px;
 	text-align: center;
 	color: #000000;	
@@ -742,7 +733,7 @@ nav a:active {
 
   	font-size: 17px;
 	font-family: "PTSans", Arial, sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 18px;
 	text-align: center;
 	color: #a9a9a9;	
@@ -753,7 +744,7 @@ nav a:active {
 
 	font-size: 17px;
 	font-family: "PTSans", Arial, sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 18px;
 	text-align: center;
 	color: #ffffff;
@@ -857,7 +848,6 @@ nav a:active {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
 	line-height: 30px;
-	color: #000000;
 }
 
 .services p {
@@ -867,7 +857,6 @@ nav a:active {
 	font-family: "PTSans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	color: #000000;
 }
 
 .services label {
@@ -875,7 +864,7 @@ nav a:active {
 
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 21px;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 30px;
 	color: #ffffff;
 
@@ -900,7 +889,7 @@ nav a:active {
 .services h2 {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 36px;
-	font-weight: bold;
+	font-weight: 700;
 	text-transform: uppercase;
 	line-height: 36px;
 	color: #32425c;
@@ -923,7 +912,6 @@ nav a:active {
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: normal;
-	color: #000000;
 }
 
 .info p {
@@ -931,7 +919,6 @@ nav a:active {
 	font-size: 13px;
 	font-weight: normal;
 	line-height: 24px;
-	color: #000000;
 }
 
 .left ul {
@@ -942,7 +929,6 @@ nav a:active {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 20px;
-	color: #000000;
 }
 
 .left a {
@@ -1140,7 +1126,6 @@ article p {
   	font-family: "Cuprum", Arial, sans-serif;
   	font-size: 18px;
   	line-height: 18px;
-	color: #000000;
 }
 
 .form button {
