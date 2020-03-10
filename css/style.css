@@ -1088,7 +1088,6 @@ nav a:active {
 
 .services p {
 	width: 275px;
-	height: 83px;
 
 	font-family: "PTSans", Arial, sans-serif;
 	font-size: 13px;
@@ -1143,6 +1142,11 @@ nav a:active {
 	height: 39px;
 }
 
+.service {
+	width: 940px;
+	margin: 0 auto;
+}
+
 .service input {
 	display: none;
 }
@@ -1167,27 +1171,31 @@ nav a:active {
 
 .service input:checked + label {
 	background: white;
+	box-shadow: 0px 1px 0 0 #ffffff, 
+	inset 0px 1px 0 0 #ffffff;
+
 	color: #32425c;
 	cursor: default;
 }
 
 .service-content {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	justify-content: center;
 }
 
 .content {
 	display: none;
-	margin-left: 242px;
-	padding-bottom: 124px;
-	/*clear: left;*/
 }
 
-.service input:nth-of-type(1):checked ~ .content:nth-of-type(1),
-.service input:nth-of-type(2):checked ~ .content:nth-of-type(2),
-.service input:nth-of-type(3):checked ~ .content:nth-of-type(3) {
+.service input:nth-of-type(1):checked ~ .service-content .content:nth-of-type(1),
+.service input:nth-of-type(2):checked ~ .service-content .content:nth-of-type(2),
+.service input:nth-of-type(3):checked ~ .service-content .content:nth-of-type(3) {
 	display: flex;
-	justify-content: flex-end;
-	/*flex-wrap: wrap;*/
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 .content a {
