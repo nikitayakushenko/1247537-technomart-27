@@ -1087,8 +1087,6 @@ nav a:active {
 }
 
 .services p {
-	width: 275px;
-
 	font-family: "PTSans", Arial, sans-serif;
 	font-size: 13px;
 	font-weight: 400;
@@ -1179,6 +1177,8 @@ nav a:active {
 	position: absolute;
 	margin: 0;
 	padding: 0;
+
+	background-color: #f4f7f9;
 }
 
 .content h2 {
@@ -1192,9 +1192,17 @@ nav a:active {
 	color: #32425c;
 }
 
-.content p:first-of-type {
+.content .p-dely {
 	margin-top: 34px;
-	width: 295px;
+	width: 290px;
+}
+
+.content .p-guar {
+	width: 390px;
+}
+
+.content .p-cred {
+	width: 470px;
 }
 
 .content img {
@@ -1216,13 +1224,18 @@ nav a:active {
 }
 
 .content a {
+	width: 107px;
+	padding: 14px 44px;
+	margin-top: 18px;
+
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
 	text-align: center;
 
-	background-color: #ee3643;
+	background-color: #ff5357;
+	border-radius: 3px;
 }
 
 .info {
@@ -1436,19 +1449,19 @@ article p {
 	padding: 8px 0px;
 } 
 
+.footer-up-right nav:last-of-type a {
+	color: #ffd180;
+}
+
 .ending li {
 	list-style: none;
 }
 
-.ending a {
+.ending a:not(.f-logo) {
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	color: #ffffff;
-}
-
-.color a {
-	color: #ffd180;
 }
 
 .ending a:hover:not(.f-logo),
@@ -1464,12 +1477,13 @@ article p {
 }
 
 .f-logo {
-	padding: 20px 41px 25px 41px;
+	padding: 18px 41px 15px;
 	margin-bottom: 32px;
 	width: 138px;
 
 	font-family: "Cuprum", Arial, sans-serif;
-	font-size: 32px;
+	font-size: 30px;
+	line-height: 30px;
 	color: #ffffff;
 	text-transform: uppercase;
 
