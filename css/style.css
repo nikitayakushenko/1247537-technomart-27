@@ -1382,7 +1382,7 @@ article p {
 .footer-up {
 	display: flex;
 	width: 940px;
-	padding-bottom: 21px;
+	padding-bottom: 53px;
 	margin: 0 auto;
 }
 
@@ -1390,21 +1390,51 @@ article p {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	font-size: 0;
+    line-height: 0;
 }
 
 .footer-up-right {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	width: 613px;
     margin-top: 30px;
+    font-size: 0;
+    line-height: 0;
 }
 
 .footer-up-right nav {
 	display: flex;
+	height: 40px;
+	width: 613px;
 	box-shadow: none;
 	margin-bottom: 0;
 }
+
+.footer-up-right nav ul {
+	display: flex;
+	justify-content: flex-end;
+	padding: 8px 0px;
+	padding-bottom: 0px;
+}
+
+.footer-up-right nav li {
+	display: inline-block;
+}
+
+.footer-up-right nav a {
+	padding: 0px 30px;
+}
+
+.footer-up-right nav:first-of-type {
+	margin-left: 35px;
+} 
+
+.footer-up-right nav:last-of-type {
+	margin-top: 10px;
+	margin-left: 60px;
+	padding: 8px 0px;
+} 
 
 .ending li {
 	list-style: none;
@@ -1473,8 +1503,17 @@ article p {
 }
 
 .links {
+	min-height: 107px;
+    background: #293449;
+
 	background-color: #293449;
+
 	color: #ffffff;
+}
+
+.f-links {
+	width: 940px;
+	margin: 0 auto;
 }
 
 .links p {
@@ -1484,17 +1523,67 @@ article p {
 	color: #ffffff;
 }
 
-.f-center a {
-	padding: 10px;
+.f-left {
+	float: left;
+	padding: 37px 0 0 2px;
+	width: 228px;
+	height: 33px;
+}
 
-	border-radius: 30px;
-	background-color: #212a3a;
+.f-left p {
+	padding: 0;
+	margin: 0;
+}
+
+.f-center {
+	display: flex;
+	float: left;
+	margin: 35px 0 0 164px;
+}
+
+.f-center a {
+	position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    margin: 0 3px;
+
+    line-height: 42px;
+    text-decoration: none;
+
+    background: #212a3a;
+    border-radius: 50px;
 }
 
 .f-center a:hover,
 .f-center a:focus,
 .f-center a:active {
 	background-color: #ee3643;
+}
+
+.f-right {
+	display: flex;
+	float: left;
+    margin: 37px 0 0 118px;
+    font-size: 0;
+    line-height: 0;
+}
+
+.f-right p:first-of-type {
+	width: 135px;
+	height: 32px;
+	margin: 0;
+	margin-right: 53px;
+	padding: 0;
+}
+
+.f-right p:last-of-type {
+	width: 96px;
+	height: 34px;
+	margin: 0;
+	padding: 0;
 }
 
 .f-right a {
