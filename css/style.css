@@ -1163,12 +1163,13 @@ nav a:active {
 }
 
 .content-container {
-	position: relative;
+	position: absolute;
 	display: flex;
 	flex-direction: column;
-	align-content: flex-start;
+	align-content: center;
 	justify-content: center;
-	margin-left: 300px;
+	margin-top: 88px;
+	margin-left: 320px;
     padding-bottom: 124px;
 }
 
@@ -1207,12 +1208,25 @@ nav a:active {
 
 .content img {
 	position: absolute;
-	margin-left: 175px;
+	margin-left: 220px;
+	/*margin-top: 36px;*/
 }
 
 .service-container {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 99px;
+}
+
+.service-container .shadow {       /* ??? */
+	display: flex;
+    align-self: flex-end;
+    position: absolute;
+    z-index: 70;
+    width: 15px;
+    height: 284px;
+    background: url(../img/shadow.png) no-repeat;
+    background-position: 0 0;
 }
 
 .service input:nth-of-type(1):checked ~ .content-container .content:nth-of-type(1),
@@ -1220,7 +1234,6 @@ nav a:active {
 .service input:nth-of-type(3):checked ~ .content-container .content:nth-of-type(3) {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 }
 
 .content a {
@@ -1265,6 +1278,10 @@ nav a:active {
 	line-height: 24px;
 }
 
+.left-container h2 {
+	margin-top: 0px;
+}
+
 .left {
 	float: left;
 	width: 528px;
@@ -1284,7 +1301,7 @@ nav a:active {
 
 .left ul {
 	margin-top: 0px;
-	margin-bottom: 23px;
+	margin-bottom: 20px;
 
 	/*list-style-image: url("../img/red-point.png");*/
 }
@@ -1333,7 +1350,7 @@ nav a:active {
 }
 
 .right img {
-	margin-bottom: 40px;
+	margin-bottom: 45px;
 
 	background-color: #ffffff;
 }
