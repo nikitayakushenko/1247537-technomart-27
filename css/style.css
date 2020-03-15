@@ -125,6 +125,10 @@ a, button {
 	padding: 13px 25px 12px 11px;
 }
 
+.red-basket a {
+	padding: 13px 25px 12px 11px;
+}
+
 .top-buttons a {
 	width: 150px;
 	font-family: "Cuprum", Arial, sans-serif;
@@ -210,7 +214,6 @@ a, button {
 
 header {
 	min-height: 320px;
-	margin-bottom: 40px;
 
 	background-color: #f4f7f9;
 }
@@ -267,7 +270,7 @@ header {
 }
 
 .enter svg {
-	padding-right: 14px; 
+	padding-right: 10px; 
 }
 
 .registration {
@@ -307,21 +310,37 @@ header {
 }
 
 .login {
-	width: 299px;
-	height: 45px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 25px 0 10px; 
 
 	background: #fff;
 }
 
-.login a {
+.login a:first-child {
+	display: flex;
+	padding: 11px 39px 11px 14px;
+
 	font-size: 21px;
 	font-family: "Cuprum", Arial, sans-serif;
 	line-height: 21px;
 	color: #000000;
 }
 
+.login a:last-child {
+	padding-top: 7px;
+}
+
+.cabinet {
+	display: flex;
+	align-items: center;
+	margin-left: 17px;
+}
+
 .my-orders,
 .my-office {
+	padding: 0 14px;
 	font-size: 16px;
 	font-family: "Cuprum", Arial, sans-serif;
 	line-height: 18px;
@@ -401,7 +420,20 @@ nav a:active {
 	color: rgba(255, 255, 255, 0.5);
 }
 
+.scroll {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.scroll ul {
+	display: flex;
+	padding: 0;
+	margin: 25px 0;
+}
+
 .scroll li {
+	padding: 0 7px;
+
 	font-family: "PTSans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
@@ -414,20 +446,57 @@ nav a:active {
 }
 
 .main-name {
-	width: 940px;
-  	height: 89px;
+	width: 910px;
+	margin: 0 auto;
+	padding: 32px 0 34px 30px;
 
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
 	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 400;
 	color: #32425c;
 
 	background-color: #f2f6f8;
 }
 
+.range {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 220px;
+	height: 80px;
+
+	background-color: #f7f3ec;
+}
+
+#slider-range {
+	width: 180px;
+	
+
+	background-color: #f7f3ec;
+}
+
+.amount {
+	padding: 14px 0px 14px 24px;
+	margin-top: 9px;
+
+	color: #000000;
+	background-color: #f7f3ec;
+}
+
+.options {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.lists {
+	width: 220px;
+}
+
 .lists h4 {
 	width: 220px;
-  	height: 38px;
+	padding: 14px 0px 15px 18px;
 
 	font-family: "PTSans", Arial, sans-serif;
   	font-size: 13px;
@@ -453,6 +522,39 @@ nav a:active {
   	text-transform: uppercase;
 }
 
+.h-line {
+	margin: 25px 0;
+
+	opacity: 0.3;
+}
+
+.manufactur,
+.power {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+.manufactur ul {
+	padding: 0;
+	margin-bottom: 0;
+
+	list-style: none;
+}
+
+
+.power ul {
+	padding: 0;
+	margin-bottom: 83px;
+
+	list-style: none;
+}
+
+.manufactur li:not(:last-child),
+.power li:not(:last-child) {
+	padding-bottom: 20px;
+}
+
 .manufactur label {
 	font-family: "PTSans", Arial, sans-serif;
   	font-size: 15px;
@@ -468,6 +570,8 @@ nav a:active {
 }
 
 .power button {
+	padding: 11px 39px 9px 39px;
+
 	font-family: "PTSans", Arial, sans-serif;
   	font-size: 13px;
   	line-height: 18px;
@@ -792,9 +896,8 @@ nav a:active {
 	display: flex;
 	justify-content: center;
 	margin: 0 auto;
-	margin-left: 20px;
   	width: 700px;
-  	margin: 20px auto;
+  	margin-top: 20px;
 
   	font-size: 0;
 }
@@ -1036,9 +1139,10 @@ nav a:active {
 
 .manufactures {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	flex-wrap: wrap;
-	margin: 20px auto 85px auto;
+	width: 940px;
+	margin: 20px auto 65px auto;
 
 	font-size: 0;
     line-height: 0;
@@ -1051,6 +1155,10 @@ nav a:active {
     margin: 0 20px 20px 0;
     vertical-align: middle;
     border: 1px solid #e5e5e5;
+}
+.manufactures .block-3 a:last-child,
+.manufactures .block-4 a:last-child {
+	margin-right: 0;
 }
 
 .manufactures img {
@@ -1171,6 +1279,8 @@ nav a:active {
 	margin-top: 88px;
 	margin-left: 320px;
     padding-bottom: 124px;
+
+    background: url(../img/shadow.png) no-repeat;
 }
 
 .content {
@@ -1193,23 +1303,41 @@ nav a:active {
 	color: #32425c;
 }
 
-.content .p-dely {
+.content.dely {
+	width: 620px;
+	height: 250px;
+	margin-top: 40px;
+
+	background: url(../img/del_car.png) no-repeat 100% -200%;
+}
+
+.content.guar {
+	width: 620px;
+	height: 250px;
+	margin-top: 40px;
+
+	background: url(../img/guarantee.png) no-repeat 100% 0%;
+}
+
+.content.cred {
+	width: 620px;
+	height: 250px;
+	margin-top: 40px;
+
+	background: url(../img/credit.png) no-repeat 100% 0%;
+}
+
+.content.dely p {
 	margin-top: 34px;
 	width: 290px;
 }
 
-.content .p-guar {
+.content.guar p {
 	width: 390px;
 }
 
-.content .p-cred {
+.content.cred p {
 	width: 470px;
-}
-
-.content img {
-	position: absolute;
-	margin-left: 220px;
-	/*margin-top: 36px;*/
 }
 
 .service-container {
@@ -1218,16 +1346,18 @@ nav a:active {
 	margin-bottom: 99px;
 }
 
-.service-container .shadow {       /* ??? */
+/*.service-container .shadow {      
 	display: flex;
-    align-self: flex-end;
+    align-self: flex-start;
     position: absolute;
     z-index: 70;
     width: 15px;
     height: 284px;
+    
+    left: 850px;
     background: url(../img/shadow.png) no-repeat;
     background-position: 0 0;
-}
+}*/
 
 .service input:nth-of-type(1):checked ~ .content-container .content:nth-of-type(1),
 .service input:nth-of-type(2):checked ~ .content-container .content:nth-of-type(2),
@@ -1385,22 +1515,37 @@ nav a:active {
 }
 
 article {
-	height: 261px;
+	width: 100%;
+
 	color: #000000;
 
 	background-color: #f4f7f9;
 }
 
+.about {
+	width: 940px;
+	margin: 0 auto;
+	padding: 67px 0 73px 0;
+}
+
 article h2 {
+	margin: 0;
+	margin-bottom: 28px;
+
 	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 30px;
 	line-height: 30px;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 
 article p {
+	width: 970px;
+	margin: 0;
+
 	font-family: "PTSans", Arial, sans-serif;
 	font-size: 13px;
+	font-weight: 400;
 	line-height: 24px;
 }
 
@@ -1534,15 +1679,18 @@ article p {
 }
 
 .links {
+	display: flex;
 	min-height: 107px;
-    background: #293449;
 
+    background: #293449;
 	background-color: #293449;
 
 	color: #ffffff;
 }
 
 .f-links {
+	display: flex;
+	justify-content: space-between;
 	width: 940px;
 	margin: 0 auto;
 }
@@ -1555,7 +1703,6 @@ article p {
 }
 
 .f-left {
-	float: left;
 	padding: 37px 0 0 2px;
 	width: 228px;
 	height: 33px;
@@ -1568,8 +1715,9 @@ article p {
 
 .f-center {
 	display: flex;
-	float: left;
-	margin: 35px 0 0 164px;
+	justify-content: center;
+	align-self: center;
+	width: 300px;
 }
 
 .f-center a {
@@ -1581,7 +1729,6 @@ article p {
     height: 42px;
     margin: 0 3px;
 
-    line-height: 42px;
     text-decoration: none;
 
     background: #212a3a;
@@ -1597,7 +1744,7 @@ article p {
 .f-right {
 	display: flex;
 	float: left;
-    margin: 37px 0 0 118px;
+    margin-top: 37px;
     font-size: 0;
     line-height: 0;
 }
