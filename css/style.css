@@ -882,6 +882,8 @@ nav a:active {
 }
 
 .slide {
+	display: flex;
+	flex-wrap: wrap;
 	width: 620px;
 	height: 266px;
 	margin-right: 20px;
@@ -892,12 +894,27 @@ nav a:active {
 	background-size: 100%;
 }
 
+.arrows {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 620px;
+}
+
+.arrows button {
+	margin: 0 20px 0 25px;
+	padding: 0;
+
+	border: 0;
+	background-color: #000;
+}
+
 .slide a {
 	display: block;
 
     width: 195px;
     padding: 10px 0px;
-    margin-top: 90px;
+    margin-top: 44px;
 
     font-weight: 400;
     font-size: 14px;
@@ -945,6 +962,8 @@ nav a:active {
   	background-color: #ba2732;
   	opacity: 1;
 }
+
+
 
 .materials {
 	margin-bottom: 20px;
