@@ -110,8 +110,9 @@
 					<h2>Популярные товары:</h2>
 					<a href="catalog.html">Все популярные товары</a>
 				</div>
-			<section class="catalog-items">
+			<section>
 				<h2 class="visually-hidden">Каталог товаров</h2>
+				<div class="catalog-items">
 			    	<div class="catalog-item">
 				        <div class="actions">
 				          	<a href="#" class="buy">
@@ -167,6 +168,7 @@
 				        <div class="discount"></div>
 				        <div class="price">12 500 Р.</div>
 			      	</div>
+			    </div>
 		  	</section>
 			<div class="popular-manuf">
 				<h2>Популярные производители:</h2>
@@ -174,13 +176,13 @@
 			</div>
 			<section class="manufactures">
 				<h2 class="visually-hidden">Производители</h2>
-					<div class="block-3">
+					<div>
 						<a href="https://www.bosch-professional.com"><img src="img/bosch.png" alt="BOSCH"></a>
 						<a href="https://maklta.com"><img src="img/Makita.png" alt="Makita"></a>
 						<a href="https://dewalt.top"><img src="img/DeWALT.png" alt="DeWALT"></a>
 						<a href="https://www.interskol.ru"><img src="img/Interskol.png" alt="Interskol"></a>
 					</div>
-					<div class="block-4">
+					<div>
 						<a href="http://www.hitachi.com"><img src="img/Hitachi.png" alt="Hitachi"></a>
 						<a href="https://www.lg.com"><img src="img/LG.png" alt="LG"></a>
 						<a href="https://www.aeg.ua"><img src="img/AEG.png" alt="AEG"></a>
@@ -327,22 +329,27 @@
 			</div>
 		</section>
 	</footer>
-	<div class="visually-hidden form">
-				<h2 class="f-form">Форма входа</h2>
+	<div class="form">
 				<form class="map-tip" action="http://technomart.com" method="post">
-					<p>
-						<label for="name-map">Ваше имя:</label>
-						<input id="name-map" type="text" name="name" placeholder="Имя Фамилия">
-					</p>
-					<p>
-						<label for="mail-map">Ваш e-mail:</label>
-						<input id="mail-map" type="email" name="mail" placeholder="email@example.com">
-					</p>
-					<p>
-						<label for="letter">Текст письма:</label>
-						<textarea id="letter" cols="60" rows="10" name="letter" placeholder="В свободной форме"></textarea>
-					</p>
-					<button type="submit">Отправить</button>
+					<div class="form-mail">
+						<div class="form-name">
+							<div>
+								<label for="name-map">Ваше имя:</label>
+								<input id="name-map" type="text" name="name" placeholder="Имя Фамилия">
+							</div>
+							<div>
+								<label for="mail-map">Ваш e-mail:</label>
+								<input id="mail-map" type="email" name="mail" placeholder="email@example.com">
+							</div>
+						</div>
+						<div class="form-letter">
+							<label for="letter">Текст письма:</label>
+							<textarea id="letter" cols="60" rows="6" name="letter" placeholder="В свободной форме"></textarea>
+						</div>
+					</div>
+					<div class="form-button">
+						<button type="submit">Отправить</button>
+					</div>
 				</form>
 			</div>
 </body>
