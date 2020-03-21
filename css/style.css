@@ -71,7 +71,7 @@ a, button {
 
 .navigation form {
 	display: flex;
-	display: 270px;
+	width: 270px;
 }
 
 .navigation input[type=search] {
@@ -2147,8 +2147,7 @@ article p {
 .form {
 	position: fixed;
 
-	display: flex;
-	flex-direction: column;
+	display: none;
 	width: 620px;
  	margin: 0 auto;
  	bottom: 201px;
@@ -2280,9 +2279,23 @@ article p {
 	background-color: #ee3643;
 }
 
-.popup-catalog {
+.popup-basket {
 	position: fixed;
 
+	display: none;
+	width: 620px;
+	height: 282px;
+	margin: 0 auto;
+	top:  411px;
+	left: 35%;
+
+	background-color: #fff;
+	box-shadow: 
+	0px 20px 40px 0 rgba(41, 52, 73, 0.75); 
+	border-top: 7px solid #ee3643;
+}
+
+.popup-catalog {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -2294,9 +2307,6 @@ article p {
 	left: 35%;
 
 	background-color: #fff;
-	box-shadow: 
-	0px 20px 40px 0 rgba(41, 52, 73, 0.75); 
-	border-top: 7px solid #ee3643;
 }
 
 .popup-catalog p {
@@ -2320,10 +2330,11 @@ article p {
 .modal-close {
   position: absolute;
   top: 9px;
-  right: 12px;
+  right: 9px;
   
   width: 21px;
   height: 21px;
+  padding: 0;
 
   background-color: transparent;
   border: 0;
@@ -2337,7 +2348,7 @@ article p {
 
   position: absolute;
   top: 9px;
-  left: 2px;
+  left: 0px;
 
   width: 25px;
   height: 4px;
@@ -2409,18 +2420,18 @@ article p {
 	background-color: #c2c2c2;
 }
 
-.pop-map {
-	position: fixed;
+.modal-map {
+  	position: fixed;
 
-	display: flex;
-	flex-direction: column;
-	width: 940px;
+	display: none;
+	width: 620px;
  	margin: 0 auto;
  	bottom: 201px;
- 	left: 25%;
+ 	left: 35%;
 	
-	background: none;
-	border: 0;
+	background-color: #fff;
   	box-shadow: 
   	0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  	border-top: 7px solid #ee3643;
 }
+
