@@ -7,44 +7,28 @@
 	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script>
-  	$( function() {
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 30000,
-      values: [ 0, 30000 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "" + ui.values[ 0 ] );
-        $( "#amount-scnd" ).val( "" + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ));
-      $( "#amount-scnd" ).val( "" + $( "#slider-range" ).slider( "values", 1 ));
-  } );
-  </script>
 </head>
 <body>
 	<header>
 		<div class="navigation">
-			<a class="logo" href="index.html">Техномарт</a>
-			<form class="search" action="http://technimart.com" method="post">
-				<button type="submit">
-					<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
-				</button>
-				<input type="search" name="search" placeholder="Поиск:">
-			</form>
-			<div class="bookmarks">
-				<a class="top-buttons" href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>Закладки: 0</a>
+			<div class="navigation-container">
+				<a class="logo" href="index.html">Техномарт</a>
+				<form class="search" action="http://technimart.com" method="post">
+					<button type="submit">
+						<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+					</button>
+					<input type="search" name="search" placeholder="Поиск:">
+				</form>
+				<div class="bookmarks">
+					<a class="top-buttons" href=""><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>Закладки: 0</a>
+				</div>
+				<div class="red-basket">
+					<a href="top-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Корзина: 10</a>
+				</div>
+				<a class="order-btn" href="">Оформить заказ</a>
 			</div>
-			<div class="red-basket">
-				<a href="top-buttons"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Корзина: 10</a>
-			</div>
-			<a class="order-btn" href="">Оформить заказ</a>
 		</div>
+
 		<div class="data">
 			<p>
 				Интернет-магазин
@@ -55,7 +39,7 @@
             		<a class="phone" href="tel:+78125550555"><img src="img/icon-phone.svg" alt="phone">+7 (812) 555-05-55</a>
             		<address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         	</div>
-        	<div class="enter">
+        	<div class="enter-container">
         		<div class="login">
 					<a class="login-name" href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>Равшан Джамшутович</a><a class="login-name" href=""><svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg></a>
 				</div>
@@ -95,15 +79,24 @@
 			<section class="options">
 				<div class="lists">
 					<h4>Фильтр:</h4>
-					<form action="http://technomart.com" method="post">
-  						<label for="amount">Цена:</label>
-						<div class="range">
-  							<div id="slider-range"></div>
-  						</div>
-						
-  						<input type="text" id="amount" class="amount" readonly>
-  						<p>—</p>
-  						<input type="text" id="amount-scnd" class="amount" readonly>
+					<form method="get" action="https://echo.htmlacademy.ru">
+    					<fieldset class="filter-item">
+    					  <legend>Цена:</legend>
+    					  <div class="range-filter">
+    					    <div class="range-controls">
+    					      <div class="scale">
+    					        <div class="bar" style="margin-left: 0%; width: 85%"></div>
+    					      </div>
+    					      <div class="toggle toggle-min"></div>
+    					      <div class="toggle toggle-max"></div>
+    					    </div>
+    					    <div class="price-controls">
+    					      <label class="min-price"><input name="min-price" type="number" value="0"></label>
+    					      <p>—</p>
+    					      <label class="max-price"><input name="max-price" type="number" value="30000"></label>
+    					    </div>
+    					  </div>
+    					</fieldset>
 
  					<hr class="h-line">
 					<fieldset class="manufactur">
@@ -269,7 +262,6 @@
 							    <div class="price">25 500 Р.</div>
 							 </div>
 						    <div class="catalog-item-container">
-							   	<div class="flag flag-new">новинка</div>
 							    <div class="actions">
 							       	<a href="#" class="buy">
 							       		<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/><circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/><path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
@@ -282,9 +274,10 @@
 							    <div class="discount"></div>
 							    <div class="price">12 500 Р.</div>
 				    		</div>
-				    		</div>
 				    	</div>
-				    	<div class="pages">
+				    	
+					</div>	
+					<div class="pages">
 							<ul>
 								<li><a href="">1</a></li>
 								<li><a href="">2</a></li>
@@ -292,7 +285,6 @@
 								<li><a class="next" href="">Следующая</a></li>
 							</ul>
 						</div>
-					</div>	
 				</div>
 			</section>
 			<article>
@@ -371,6 +363,9 @@
   				<image id="form-1" width="66" height="66" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABCCAYAAADjVADoAAAFJ0lEQVR4nO2cT2gcVRzHvzvbHkJCbRoV2lQiJX9s0VLTVKmRsRHqoTQV3SJ0qkK7XrwUGz2EHD3UHKSFHDWziOAKJQtqSy+CqSPRokJEi9pGxYg19JAs1EqtYld+w++lk83uzLzZt/Nnux9IyG4yv32/D29m3vzee0khBLJ5vQ/AIICtAHr5qx1AG4BWbsFfAK4DKAK4zF8/AJgxDetSvVtZFxHZvL4WwD4ABwEMAeisMeQVANMApgCcMw3rX0VNXUapiGxe7wFwDMAhAB0qYztYBPA+gAnTsOZUBVUiIpvXtwMYA/BcvXpZBUoATgM4YRrWt7UGq6nR2by+AcA4gJdCFFAOCZkEMGoa1lLQIIEbn83rLwI4WcdTQBY6ZUZMw3o3yMHSIrJ5fR2AHICM6kwUUQBw1DSsazLhpETwbfAMgJ4IEpSBLqLDMrdd3yKyeX2QJbTXOwtFFFnGjJ9wvkRk8/qTAM4CaIlBgjLcALDfNKxPvI7xFME94eMEShCQjL1ePcNVBF8TvkjQ6VANOk12u10zqorgu8PXCbgw+oUuoAPV7iaaS5BcA0kA55Kr9suKIniwFNdxQi1kOLdVrDo1eNh8OUYjRtXQCLS3fDheqUeMN7AEcG7j5W+u6BH8FPlNhA9QYUEPajucT63lPWLsDpAAznGs/A0bLqpcukNEgHtFnyjuOHvEsSRKuKdtE9a33B3k0BTnvPxC1BgXknaR3NE5iJcffx3//HcTp6Zfwy+L38uGoDvIRqqBih6xL6kS0toatKxtxfGhN7GlY5tsmA7OffnUOKi8pXXEKUFQgww7dyFiKAkCUEWCQMjYvH6LTEg7d42fMGuddwgFNwlOGX33PizTnE5yoPEMVENIIH68OovPfj4rG35Q42m4WCMjYeLTUfsuIslWjechY4u8hL+DpNIbaxEhSYAQEcsyXIgSiHaNp+ZrRu8exslnPsAT3QdqjhWyBKJtjWN9QmD29DyN5wdG7MNf2PUqUqkUzs99GChcBBKIVreapS+cEgT0mt6XJSIJNhqvVAkEnQblEoLKiFICOdB4uY40qZSGwwOvuB7mV0bEEojrGk9+SFMq3fJ1HfCSEQMJRDHdn+l6iio1QY6+uPAl1rW04/4ND7j+3fZNu3HtZhG/Lq2caIqJBOJzErETwGNBI3z3x4VAMmIkgThDIu4DIH+JdyAjg9h4VxeOPDoaFwmESS3xtX7AjRJKeO+rU/Zf7Ol2d3rgoSO+YoYogZgRNcvfVdQkUkjh8K7jnjK8CFnCFdOwNosB1bSKiKJnnP8p2KgS4UuAyF2ImFIVtRYZEUiAyF2IOMelbSUEkRGRhEXOHWn6NluYv8V3j0dUforfu0lEEoicaVh2Xc/50DXB02DK8NMzIpRQ4pxt0uKH2cL8Un+mi+qXD6r+xGo9I0IJxGnTsN4SL8ofw0+o7hWo0jMillDiXJdJO1/MFuav9me6aDyxsx6fTj2D2rDw52/IXXgjKgnEpGlYk843Ko1xRwE8W4+5UOoZH118R3VYWRY5xxWsqlDx2qLK1ZbGYKTSdga3dZZTDbiyrmAaVsUJb7ea5VFepNkozHFOFakqgleoDgetYMUMsVK/6h4O1yo2r10e5oXdSeWGn70bnuV8XtW+P6EyxDYFz5qLr3kN3u+wN2GnSZG3J3ju1UBzK9NtpGa6OPAAbyCLKwXejiC1jbq53ZEJPPfJH0hrK96ux4OaBCVuQ29QCWhuib5Nc5M80/y3CUzzH2kQAP4H3ZtabfsEYrYAAAAASUVORK5CYII="/>
 			</svg>
 			<p>Товар добавлен в корзину!</p>
+			<button class="modal-close" type="button">
+    			<span class="visually-hidden">Закрыть</span>
+  			</button>
 		</div>
 		<div class="buttons-order">
 			<a href="">Оформить заказ</a>
